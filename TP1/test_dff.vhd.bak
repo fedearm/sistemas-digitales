@@ -34,9 +34,9 @@ end test_dff;
 
 architecture Behavioral of test_dff is
 	signal test_d : std_logic:= '0';
-   	signal test_en : std_logic:= '0';
+   signal test_en : std_logic:= '0';
 	signal test_rst : std_logic:= '0';
-	signal clock  : std_logic := '0';
+   signal clock  : std_logic := '0';
 	signal test_out : std_logic;
 
 begin
