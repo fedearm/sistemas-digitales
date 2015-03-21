@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use std.textio.all;
+use IEEE.std_logic_textio.all;
 
 entity test_counter is
 end test_counter;
@@ -12,7 +14,7 @@ architecture Beh of test_counter is
 
 begin
 	uut: entity work.counter(Behavioral)
-		generic map(N=>4)
+		--generic map(N=>4)
 		port map(en=>enable, rst=>reset, clock=>clk, outp=>output);
 
 	clk <= not clk after 5 ns;
