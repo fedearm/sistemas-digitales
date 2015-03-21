@@ -27,24 +27,28 @@ entity counter is
 	port( en: in  std_logic;
     	      clock:    in  std_logic;
 	      rst:  in  std_logic;
+              over: out std_logic;
 	      outp: out std_logic_vector(N-1 downto 0));
 end counter;
 
 architecture Behavioral of counter is
-	constant OV : std_logic_vector(N-1 downto 0) := "1010";	
+	constant OV : std_logic_vector(N-1 downto 0) := "1001";	
 	signal salida: std_logic_vector(N-1 downto 0);
 begin
    process(clock,rst,en)
    begin
 	if rst='1' then
 	        salida <= ( others => '0' );
+		over <= '0';
 	elsif rising_edge(clock) then
 		
 		if en='1' then
 			if salida = OV then
 				salida <= ( others => '0');
+				over <= '1';
 			else
 				salida <= salida + 1;
+				over <= '0';
 			end if;
 		end if;
 	end if;
