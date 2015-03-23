@@ -1,26 +1,7 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    01:14:03 03/21/2015 
--- Design Name: 
--- Module Name:    counter - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all; 
- use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity counter is
 	generic ( N : integer := 4);
@@ -41,14 +22,13 @@ begin
 	        salida <= ( others => '0' );
 		over <= '0';
 	elsif rising_edge(clock) then
-		
+		over <= '0';
 		if en='1' then
 			if salida = OV then
 				salida <= ( others => '0');
 				over <= '1';
 			else
 				salida <= salida + 1;
-				over <= '0';
 			end if;
 		end if;
 	end if;
