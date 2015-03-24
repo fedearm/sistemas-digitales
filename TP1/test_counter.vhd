@@ -18,7 +18,7 @@ begin
 		--generic map(N=>4)
 		port map(en=>enable, rst=>reset, clock=>clk, over=>oflow, outp=>output);
 
-	clk <= not clk after 5 ns;
+	clk <= not clk after 10 ns;
   
 	StimuliProcess : process
 	begin

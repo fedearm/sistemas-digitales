@@ -6,7 +6,7 @@ use IEEE.std_logic_textio.all;
 entity test_counter_4dig is
 end test_counter_4dig;
 
-architecture Beh of test_counter is
+architecture Beh of test_counter_4dig is
 	signal enable : std_logic:= '0';
    	signal clk : std_logic:= '0';
 	signal reset : std_logic:= '0';
