@@ -15,8 +15,8 @@ architecture Beh of test_counter is
 
 begin
 	uut: entity work.counter(Behavioral)
-		--generic map(N=>4)
-		port map(en=>enable, rst=>reset, clock=>clk, over=>oflow, outp=>output);
+		generic map(N=>4)
+		port map(en=>enable, rst=>reset, OV=>"1001", clock=>clk, over=>oflow, outp=>output);
 
 	clk <= not clk after 10 ns;
   

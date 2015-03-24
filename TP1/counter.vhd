@@ -4,16 +4,18 @@ use ieee.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity counter is
-	generic ( N : integer := 4);
-	port( en: in  std_logic;
-    	      clock:    in  std_logic;
+	generic ( N : integer := 4 );
+	port( en:   in  std_logic;
+    	      clock:in  std_logic;
 	      rst:  in  std_logic;
+	      OV:   in  std_logic_vector(N-1 downto 0);	
+
               over: out std_logic;
 	      outp: out std_logic_vector(N-1 downto 0));
 end counter;
 
 architecture Behavioral of counter is
-	constant OV : std_logic_vector(N-1 downto 0) := "1001";	
+	--constant OV : std_logic_vector(N-1 downto 0) := "1001";	
 	signal salida: std_logic_vector(N-1 downto 0);
 begin
    process(clock,rst,en)
