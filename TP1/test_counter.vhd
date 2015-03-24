@@ -11,12 +11,15 @@ architecture Beh of test_counter is
    	signal clk : std_logic:= '0';
 	signal reset : std_logic:= '0';
 	signal oflow:  std_logic;
-	signal output : std_logic_vector(3 downto 0) := "0000";
+	--signal output : std_logic_vector(3 downto 0) := "0000";
+	signal output : std_logic_vector(1 downto 0) := "00";
 
 begin
 	uut: entity work.counter(Behavioral)
-		generic map(N=>4)
-		port map(en=>enable, rst=>reset, OV=>"1001", clock=>clk, over=>oflow, outp=>output);
+		--generic map(N=>4)
+		--port map(en=>enable, rst=>reset, OV=>"1001", clock=>clk, over=>oflow, outp=>output);
+		generic map(N=>2)
+		port map(en=>enable, rst=>reset, OV=>"11", clock=>clk, over=>oflow, outp=>output);
 
 	clk <= not clk after 10 ns;
   

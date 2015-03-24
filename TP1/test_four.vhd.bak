@@ -18,7 +18,7 @@ begin
 		port map(en=>enable, rst=>reset, clk=>clk,
 			out0=>output0,out1=>output1,out2=>output2,out3=>output3);
 
-	clk <= not clk after 5 ns;
+	clk <= not clk after 10 ns;
   
 	StimuliProcess : process
 	begin

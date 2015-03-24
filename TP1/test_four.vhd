@@ -14,7 +14,7 @@ architecture Beh of test_counter_4dig is
 
 begin
 	uut: entity work.contador_4dig(Behavioral)
-		--generic map(N=>4)
+		generic map(N=>4)
 		port map(en=>enable, rst=>reset, clk=>clk,
 			out0=>output0,out1=>output1,out2=>output2,out3=>output3);
 
