@@ -1,14 +1,27 @@
-{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd}
+{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity contador_4dig
--- Compiling architecture Behavioral of contador_4dig
+-- Compiling entity disp_ctrl
+-- Compiling architecture Behavioral of disp_ctrl
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
 -- Loading entity counter
+-- Loading entity bits_to_an
+-- Loading entity mux2
+-- Loading entity bcd_to_7seg
+-- Loading entity generador
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_ctrl_disp
+-- Compiling architecture Beh of test_ctrl_disp
+-- Loading entity disp_ctrl
 
 } {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
