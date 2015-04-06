@@ -1,53 +1,4 @@
-{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity contador_4dig
--- Compiling architecture Behavioral of contador_4dig
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Loading entity counter
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(19): (vcom-1035) Formal port "en" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(19): (vcom-1035) Formal port "clock" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(19): (vcom-1035) Formal port "rst" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(19): (vcom-1035) Formal port "OV" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(20): near "port": syntax error
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(22): (vcom-1035) Formal port "en" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(22): (vcom-1035) Formal port "clock" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(22): (vcom-1035) Formal port "rst" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(22): (vcom-1035) Formal port "OV" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(23): near "port": syntax error
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(25): (vcom-1035) Formal port "en" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(25): (vcom-1035) Formal port "clock" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(25): (vcom-1035) Formal port "rst" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(25): (vcom-1035) Formal port "OV" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(26): near "port": syntax error
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(28): (vcom-1035) Formal port "en" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(28): (vcom-1035) Formal port "clock" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(28): (vcom-1035) Formal port "rst" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(28): (vcom-1035) Formal port "OV" has OPEN or no actual associated with it.
-
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(29): near "port": syntax error
-** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd(31): VHDL Compiler exiting
-
-} {12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0 22.0 23.0 24.0 25.0 26.0 27.0 28.0 29.0 31.0 32.0 33.0 34.0 35.0 36.0 37.0 38.0 40.0 41.0 42.0 43.0 44.0 45.0 46.0 47.0 49.0} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd}
+{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -72,7 +23,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Compiling architecture Beh of test_ctrl_disp
 -- Loading entity disp_ctrl
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -80,9 +31,19 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package std_logic_textio
 -- Compiling entity test_counter_4dig
 -- Compiling architecture Beh of test_counter_4dig
+-- Loading package NUMERIC_STD
 -- Loading entity contador_4dig
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd(19): (vcom-1484) Unknown formal identifier "out0".
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd}
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd(19): (vcom-1484) Unknown formal identifier "out1".
+
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd(19): (vcom-1484) Unknown formal identifier "out2".
+
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd(19): (vcom-1484) Unknown formal identifier "out3".
+
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd(69): VHDL Compiler exiting
+
+} {11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0 20.0} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -100,6 +61,19 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package NUMERIC_STD
 -- Compiling entity generador
 -- Compiling architecture Beh of generador
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Compiling entity test_counter
+-- Compiling architecture Beh of test_counter
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Loading entity counter
 
 } {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
