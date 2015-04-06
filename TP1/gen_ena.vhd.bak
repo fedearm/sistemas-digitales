@@ -4,6 +4,7 @@ use ieee.std_logic_unsigned.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity generador is
+	--generic ( N : integer := 50000000);
 	generic ( N : integer := 5);
 	port( clock:    in  std_logic;
 	      over: out std_logic );

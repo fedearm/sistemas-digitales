@@ -7,7 +7,7 @@ entity disp_ctrl is
 	      clk: in  std_logic := '0';
 	      rst: in std_logic:= '1';
 	      anodos: out  std_logic_vector(3 downto 0);
-	      a_mux: out std_logic_vector(1 downto 0);
+	      --a_mux: out std_logic_vector(1 downto 0);
 	      seg7: out std_logic_vector(7 downto 0) );
 end disp_ctrl;
 
@@ -33,9 +33,9 @@ begin
 
 	generator_unit: entity work.generador(Beh)
 		--generic map(N=>50000)
-		generic map(N=>1)
+		generic map(N=>4)
 		port map(clock=>clk, over=>enable);
 
-	a_mux<=sel_mux;
+	--a_mux<=sel_mux;
 end Behavioral;
 
