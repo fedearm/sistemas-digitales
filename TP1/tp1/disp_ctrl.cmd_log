@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/disp_ctrl.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/disp_ctrl.syr" 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/disp_ctrl.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/disp_ctrl.syr" 

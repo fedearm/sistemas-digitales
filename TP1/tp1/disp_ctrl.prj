@@ -1,0 +1,4 @@
+vhdl work "ise_mux.vhd"
+vhdl work "ise_cont.vhd"
+vhdl work "ise_anodos.vhd"
+vhdl work "ise_controlador.vhd"
