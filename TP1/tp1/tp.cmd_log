@@ -7,3 +7,46 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I "tp.ngc" 
 map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o tp_map.ncd tp.ngd tp.pcf 
 par -w -intstyle ise -ol high -mt off tp_map.ncd tp.ncd tp.pcf 
 trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf 
+bitgen -intstyle ise -f tp.ut tp.ncd 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc toplevel.ucf -p xc3s500e-fg320-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf -ucf toplevel.ucf 
+bitgen -intstyle ise -f tp.ut tp.ncd 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc toplevel.ucf -p xc3s500e-fg320-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf -ucf toplevel.ucf 
+bitgen -intstyle ise -f tp.ut tp.ncd 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc toplevel.ucf -p xc3s500e-fg320-4 "tp.ngc" tp.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tp_map.ncd tp.ngd tp.pcf 
+par -w -intstyle ise -ol high -t 1 tp_map.ncd tp.ncd tp.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml tp.twx tp.ncd -o tp.twr tp.pcf -ucf toplevel.ucf 
+bitgen -intstyle ise -f tp.ut tp.ncd 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 
+xst -intstyle ise -ifn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.xst" -ofn "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/tp.syr" 

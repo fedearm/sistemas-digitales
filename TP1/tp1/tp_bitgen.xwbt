@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\tp1\tp.ncd
+OUTFILE=C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\tp1\tp.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\tp1
+LICENSE=WebPack
+USER_INFO=__0_0_0

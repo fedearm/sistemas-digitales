@@ -5,25 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\tp1\ise_controlador.vhd</arg>&quot; line <arg fmt="%s" index="2">21</arg>: Output port &lt;<arg fmt="%s" index="3">over</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cont_2b_unit</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_controlador.vhd</arg>&quot; line <arg fmt="%d" index="2">21</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">over</arg>&apos; of component &apos;<arg fmt="%s" index="4">counter</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\tp1\ise_cont4_dig.vhd</arg>&quot; line <arg fmt="%s" index="2">24</arg>: Output port &lt;<arg fmt="%s" index="3">over</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">u_c3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_bcd.vhd</arg>&quot; line <arg fmt="%d" index="2">17</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="0" delta="new" >The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+<msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_mux.vhd</arg>&quot; line <arg fmt="%d" index="2">20</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_seg7</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_cont4_dig.vhd</arg>&quot; line <arg fmt="%d" index="2">24</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">over</arg>&apos; of component &apos;<arg fmt="%s" index="4">counter</arg>&apos;.
 </msg>
 
-<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_anodos</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">o0</arg>&gt; in unit &lt;<arg fmt="%s" index="2">contador_4dig</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">u_c3/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">contador_4dig</arg>&gt;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">o1</arg>&gt; in unit &lt;<arg fmt="%s" index="2">contador_4dig</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ctrl_disp/cont_2b_unit/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">o2</arg>&gt; in unit &lt;<arg fmt="%s" index="2">contador_4dig</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">o3</arg>&gt; in unit &lt;<arg fmt="%s" index="2">contador_4dig</arg>&gt; has a constant value of <arg fmt="%s" index="3">0000</arg> during circuit operation. The register is replaced by logic.
+</msg>
+
+<msg type="error" file="Xst" num="827" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_cont4_dig.vhd</arg>&quot; line <arg fmt="%d" index="2">30</arg>: Signal <arg fmt="%s" index="3">out0</arg> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
 </msg>
 
 </messages>

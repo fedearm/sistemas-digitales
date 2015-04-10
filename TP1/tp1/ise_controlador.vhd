@@ -32,8 +32,8 @@ begin
 		port map(bcd=>out_mux, seg7=>seg7 );
 
 	generator_unit: entity work.generador(Beh)
-		--generic map(N=>50000)
-		generic map(N=>4)
+		generic map(N=>50000)
+		--generic map(N=>4)
 		port map(clock=>clk, over=>enable);
 
 	--a_mux<=sel_mux;

@@ -1,0 +1,16 @@
+AR disp_ctrl behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_controlador.vhd" sub00/vhpl11 1428618749
+AR counter behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_contador.vhd" sub00/vhpl01 1428618739
+AR generador beh "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_generador.vhd" sub00/vhpl09 1428618747
+EN mux2 NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_mux.vhd" sub00/vhpl04 1428618742
+AR bits_to_an behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_bcd.vhd" sub00/vhpl03 1428618741
+AR tp behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_tp.vhd" sub00/vhpl15 1428618753
+AR contador_4dig behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_cont4_dig.vhd" sub00/vhpl13 1428618751
+AR mux2 behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_mux.vhd" sub00/vhpl05 1428618743
+AR bcd_to_7seg behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_bcd7.vhd" sub00/vhpl07 1428618745
+EN contador_4dig NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_cont4_dig.vhd" sub00/vhpl12 1428618750
+EN counter NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_contador.vhd" sub00/vhpl00 1428618738
+EN generador NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_generador.vhd" sub00/vhpl08 1428618746
+EN tp NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_tp.vhd" sub00/vhpl14 1428618752
+EN disp_ctrl NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_controlador.vhd" sub00/vhpl10 1428618748
+EN bcd_to_7seg NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_bcd7.vhd" sub00/vhpl06 1428618744
+EN bits_to_an NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/tp1/ise_bcd.vhd" sub00/vhpl02 1428618740
