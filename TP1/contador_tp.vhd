@@ -19,8 +19,10 @@ begin
 		port map(clk=>clk, rst=>rst, anodos=>an, seg7=>seg7, bcd0=>bcd0, bcd1=>bcd1, bcd2=>bcd2, bcd3=>bcd3);
 
 	generator_unit: entity work.generador(Beh)
-		--generic map(N=>50000000)
-		generic map(N=>32)
+		-- Para FPGA
+		generic map(N=>50000000)
+		-- Para simular
+		--generic map(N=>32)
 		port map(clock=>clk, over=>en);
 
 	contadores: entity work.contador_4dig(Behavioral)

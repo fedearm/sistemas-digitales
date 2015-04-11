@@ -31,7 +31,7 @@ begin
 	out2 <= o2;
 	out3 <= o3;
 
-   process(clk,rst,o0,o1,o2,o3)
+   process(clk,rst)
    begin
 	if rising_edge(clk) then
 		if ( o0=MAX and o1=MAX and o2=MAX and o3=MAX ) then

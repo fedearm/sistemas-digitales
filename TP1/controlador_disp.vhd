@@ -12,14 +12,15 @@ entity disp_ctrl is
 end disp_ctrl;
 
 architecture Behavioral of disp_ctrl is
-	--signal enable: std_logic;
-	--signal reset: std_logic;
 	signal enable:  std_logic := '0';
 	signal sel_mux: std_logic_vector(1 downto 0);
 	signal out_mux: std_logic_vector(3 downto 0);
 begin
 	cont_2b_unit: entity work.counter(Behavioral)
 		generic map(N=>2)
+		-- Para la simulacion
+		--port map(en=>enable, rst=>'0', clock=>clk, OV=>"11", outp=>sel_mux);
+		-- Para la implementacion en FPGA
 		port map(en=>enable, rst=>rst, clock=>clk, OV=>"11", outp=>sel_mux);
 
 	ctrl_ano_unit: entity work.bits_to_an(Behavioral)
@@ -32,8 +33,10 @@ begin
 		port map(bcd=>out_mux, seg7=>seg7 );
 
 	generator_unit: entity work.generador(Beh)
-		--generic map(N=>50000)
-		generic map(N=>4)
+		-- Para FPGA
+		generic map(N=>50000)
+		-- Para simular
+		--generic map(N=>4)
 		port map(clock=>clk, over=>enable);
 
 	--a_mux<=sel_mux;

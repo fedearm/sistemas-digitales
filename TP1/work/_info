@@ -16,19 +16,19 @@ Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z6 dC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1
-Z7 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd
-Z8 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd
+Z7 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bcd27seg.vhd
+Z8 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bcd27seg.vhd
 l0
 L6
 Ve]dT^611KnaNg<m4oM@<U3
 !s100 XLEne:7gA@?2EKRRZ74aH2
 Z9 OP;C;10.4;61
 32
-Z10 !s110 1428287077
+Z10 !s110 1428718133
 !i10b 1
-Z11 !s108 1428287077.632000
-Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd|
-Z13 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd|
+Z11 !s108 1428718133.239000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bcd27seg.vhd|
+Z13 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bcd27seg.vhd|
 !i113 1
 Z14 o-work work -2002 -explicit -O0
 Z15 tExplicit 1
@@ -58,19 +58,19 @@ Z17 w1427227624
 R4
 R5
 R6
-Z18 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd
-Z19 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd
+Z18 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bits2an.vhd
+Z19 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bits2an.vhd
 l0
 L4
 V7F;hG6mDZGSeXY5aU1H<=2
 !s100 7dZ>63]CNZnDG0z@J>E522
 R9
 32
-Z20 !s110 1428287079
+Z20 !s110 1428718134
 !i10b 1
-Z21 !s108 1428287079.681000
-Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd|
-Z23 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd|
+Z21 !s108 1428718134.942000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bits2an.vhd|
+Z23 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bits2an.vhd|
 !i113 1
 R14
 R15
@@ -93,39 +93,39 @@ R23
 R14
 R15
 Econtador_4dig
-Z25 w1428278163
+Z25 w1428717425
 R1
 R4
 R5
 R6
-Z26 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd
-Z27 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd
+Z26 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\four_counters.vhd
+Z27 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\four_counters.vhd
 l0
 L5
 VKm6`kBM0G9oFhUYYQIP=N2
 !s100 7iS6m4nz<?DMWY6Z9enPn2
 R9
 32
-Z28 !s110 1428287072
+Z28 !s110 1428718128
 !i10b 1
-Z29 !s108 1428287072.229000
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd|
-Z31 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd|
+Z29 !s108 1428718128.567000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\four_counters.vhd|
+Z31 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\four_counters.vhd|
 !i113 1
 R14
 R15
 Abehavioral
 R2
 R3
-Z32 DEx4 work 7 counter 0 22 ]1Z>5PjG]zGn==VBUk:Fa3
+Z32 DEx4 work 7 counter 0 22 8Bcb?zF0UMCSc=z:ZIhQ03
 R1
 R4
 R5
 Z33 DEx4 work 13 contador_4dig 0 22 Km6`kBM0G9oFhUYYQIP=N2
 l17
 L11
-Vm?`aO_c77g6ARiL3UAmZK1
-!s100 38Y1g`PY]2gEhYeKGJjcG1
+V9CJ0fjXT86QG08@n]WdY^2
+!s100 HWh4Q<4`J?LMnao9]08R^2
 R9
 32
 R28
@@ -137,26 +137,26 @@ R31
 R14
 R15
 Ecounter
-Z34 w1427230939
+Z34 w1428718124
 R1
 R2
 R3
 R4
 R5
 R6
-Z35 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd
-Z36 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd
+Z35 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\counter.vhd
+Z36 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\counter.vhd
 l0
 L6
-V]1Z>5PjG]zGn==VBUk:Fa3
-!s100 Ca^lUb0D>FBT;1Cf@EQV73
+V8Bcb?zF0UMCSc=z:ZIhQ03
+!s100 h?Xg^Ha7NLnKXTE77TeHF2
 R9
 32
-Z37 !s110 1428287071
+Z37 !s110 1428718127
 !i10b 1
-Z38 !s108 1428287071.308000
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd|
-Z40 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd|
+Z38 !s108 1428718127.790000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\counter.vhd|
+Z40 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\counter.vhd|
 !i113 1
 R14
 R15
@@ -169,8 +169,8 @@ R5
 R32
 l20
 L17
-Vda9`kHddF2Aa:MU2UjXah0
-!s100 m;jYQYgG1C>BgNdcHOePh2
+VC`?U8izn<1Hj;nOLSA09R2
+!s100 6n2f9Ej==lf3h4h4N5A7L3
 R9
 32
 R37
@@ -221,23 +221,23 @@ R47
 R14
 R15
 Edisp_ctrl
-Z49 w1428287030
+Z49 w1428718039
 R4
 R5
 R6
-Z50 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd
-Z51 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd
+Z50 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\controlador_disp.vhd
+Z51 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\controlador_disp.vhd
 l0
 L5
 V^m1gL>1VGi1LPT=Lk66mT3
 !s100 2QC@Q2QV5@aIz4_YnhA`@2
 R9
 32
-Z52 !s110 1428287082
+Z52 !s110 1428718137
 !i10b 1
-Z53 !s108 1428287082.762000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd|
-Z55 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd|
+Z53 !s108 1428718137.411000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\controlador_disp.vhd|
+Z55 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\controlador_disp.vhd|
 !i113 1
 R14
 R15
@@ -253,10 +253,10 @@ R32
 R4
 R5
 Z58 DEx4 work 9 disp_ctrl 0 22 ^m1gL>1VGi1LPT=Lk66mT3
-l20
+l18
 L14
-VUSXA0?M5Hn^MiO_^;Hj`W2
-!s100 ;NO9mSWZUClo8Jzm@@AKb3
+V6hG:gaI?PHL7<3Fh9_ZDX2
+!s100 bGKFzgQQ=]6cj5Y>3LQG02
 R9
 32
 R52
@@ -275,19 +275,19 @@ R3
 R4
 R5
 R6
-Z60 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd
-Z61 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd
+Z60 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\gen_ena.vhd
+Z61 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\gen_ena.vhd
 l0
 L6
 VX<POIk4nT8zV@?ze5TI?42
 !s100 T:;]G^m@JW<Dm2AA`o16i0
 R9
 32
-Z62 !s110 1428287075
+Z62 !s110 1428718131
 !i10b 1
-Z63 !s108 1428287075.470000
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd|
-Z65 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd|
+Z63 !s108 1428718131.223000
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\gen_ena.vhd|
+Z65 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\gen_ena.vhd|
 !i113 1
 R14
 R15
@@ -328,12 +328,14 @@ R9
 !s110 1427171153
 !i10b 1
 !s108 1427171153.463000
-R64
-R65
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd|
+!s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd|
 !i113 1
 R14
 R15
 w1427171149
+FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd
+8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd
 Emux2
 Z66 w1427229149
 R1
@@ -342,19 +344,19 @@ R3
 R4
 R5
 R6
-Z67 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd
-Z68 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd
+Z67 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\mux.vhd
+Z68 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\mux.vhd
 l0
 L6
 V6f?i]f^`zJ>LHA:Mz`?V21
 !s100 C`UfG>jYN0j]K]95UIAch3
 R9
 32
-Z69 !s110 1428287080
+Z69 !s110 1428718135
 !i10b 1
-Z70 !s108 1428287080.610000
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd|
-Z72 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd|
+Z70 !s108 1428718135.724000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\mux.vhd|
+Z72 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\mux.vhd|
 !i113 1
 R14
 R15
@@ -394,11 +396,11 @@ V<O^mILCfj3GdANK=F43AW1
 !s100 @och0e5egD7Zo<Xe6PZAA3
 R9
 32
-Z77 !s110 1428287078
+R20
 !i10b 1
-Z78 !s108 1428287078.832000
-Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_bcd.vhd|
-Z80 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_bcd.vhd|
+Z77 !s108 1428718134.114000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_bcd.vhd|
+Z79 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_bcd.vhd|
 !i113 1
 R14
 R15
@@ -417,33 +419,33 @@ V0iTAk0EMoC9hkhc@8K;5g2
 !s100 fV5INn2mSL99OSjlWE79g0
 R9
 32
-R77
+R20
 !i10b 1
+R77
 R78
 R79
-R80
 !i113 1
 R14
 R15
 Etest_counter
-Z81 w1428272509
+Z80 w1428272509
 R74
 R4
 R5
 R6
-Z82 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd
-Z83 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd
+Z81 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd
+Z82 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd
 l0
 L6
 VMWcnkj>1]nhO9MgZe>ORm0
 !s100 KG>_TFVzmK8TOSL6OjUb22
 R9
 32
-Z84 !s110 1428287073
+Z83 !s110 1428718129
 !i10b 1
-Z85 !s108 1428287073.336000
-Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd|
-Z87 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd|
+Z84 !s108 1428718129.473000
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd|
+Z86 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_counter.vhd|
 !i113 1
 R14
 R15
@@ -462,33 +464,33 @@ VXOXa`<I?bF@X7:OmWAYXD0
 !s100 afh?iVWHco4L0n7XHlZI22
 R9
 32
-R84
+R83
 !i10b 1
+R84
 R85
 R86
-R87
 !i113 1
 R14
 R15
 Etest_counter_4dig
-Z88 w1427235916
+Z87 w1427235916
 R74
 R4
 R5
 R6
-Z89 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd
-Z90 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd
+Z88 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd
+Z89 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd
 l0
 L6
 VB6M2H2G1=H;EEBUZ6jhGL0
 !s100 ?BJGVN<K<VF59U1dg[MPg0
 R9
 32
-Z91 !s110 1428287074
+Z90 !s110 1428718130
 !i10b 1
-Z92 !s108 1428287074.297000
-Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd|
-Z94 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd|
+Z91 !s108 1428718130.364000
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd|
+Z93 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_four.vhd|
 !i113 1
 R14
 R15
@@ -505,32 +507,32 @@ VE_eDUM4Z1RNh0Ymm[FYSX0
 !s100 N`l69fZGUNF73N@??CV7=3
 R9
 32
-R91
+R90
 !i10b 1
+R91
 R92
 R93
-R94
 !i113 1
 R14
 R15
 Etest_ctrl_disp
-Z95 w1427236963
+Z94 w1427236963
 R4
 R5
 R6
-Z96 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd
-Z97 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd
+Z95 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd
+Z96 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd
 l0
 L4
 VQ`OVfgD7imUn>U6@zSlhz2
 !s100 8nZ@6FALH@MElPgImzmSn1
 R9
 32
-Z98 !s110 1428287084
+Z97 !s110 1428718138
 !i10b 1
-Z99 !s108 1428287084.010000
-Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd|
-Z101 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd|
+Z98 !s108 1428718138.224000
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd|
+Z100 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_ctrl_disp.vhd|
 !i113 1
 R14
 R15
@@ -545,32 +547,32 @@ VQ4lS]YQbEzADA]m1<4I9j0
 !s100 E:AVEReWQiSKBAj:M0XjW0
 R9
 32
-R98
+R97
 !i10b 1
+R98
 R99
 R100
-R101
 !i113 1
 R14
 R15
 Etest_dff
-Z102 w1426912478
+Z101 w1426912478
 R4
 R5
 R6
-Z103 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd
-Z104 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd
+Z102 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd
+Z103 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd
 l0
 L32
 Vh0Ag`bZ9bQL4hE7[:T:AY0
 !s100 FdPeOAcUZ4ig5ZKCc[Gac3
 R9
 32
-Z105 !s110 1426915812
+Z104 !s110 1426915812
 !i10b 1
-Z106 !s108 1426915812.477000
-Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd|
-Z108 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd|
+Z105 !s108 1426915812.477000
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd|
+Z107 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_dff.vhd|
 !i113 1
 R14
 R15
@@ -585,33 +587,33 @@ VVOYFDm:^^W@2LlToGd;X31
 !s100 5iiKK_0Z?8`[1fS<oVnjE1
 R9
 32
-R105
+R104
 !i10b 1
+R105
 R106
 R107
-R108
 !i113 1
 R14
 R15
 Etest_gen_1s
-Z109 w1427172614
+Z108 w1427172614
 R74
 R4
 R5
 R6
-Z110 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd
-Z111 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd
+Z109 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd
+Z110 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd
 l0
 L6
 VVVCh6g?3km5b]4L>:QQ:I1
 !s100 g4nXjECBEKE2:UT`Gc;c;2
 R9
 32
-Z112 !s110 1428287076
+Z111 !s110 1428718132
 !i10b 1
-Z113 !s108 1428287076.493000
-Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd|
-Z115 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd|
+Z112 !s108 1428718132.255000
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd|
+Z114 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_gen_1s.vhd|
 !i113 1
 R14
 R15
@@ -630,34 +632,34 @@ VLOMA@>4m]F6Enl2iF1doF2
 !s100 Dc1=5i3VdUJCidTml3L[P3
 R9
 32
-R112
+R111
 !i10b 1
+R112
 R113
 R114
-R115
 !i113 1
 R14
 R15
 Etest_mux
-Z116 w1427229395
+Z115 w1427229395
 R2
 R74
 R4
 R5
 R6
-Z117 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd
-Z118 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd
+Z116 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd
+Z117 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd
 l0
 L7
 V@0zEVG=mcXQmQMGWSmk860
 !s100 Q57jG`;HDIU;iM_`2kJGJ1
 R9
 32
-Z119 !s110 1428287081
+Z118 !s110 1428718136
 !i10b 1
-Z120 !s108 1428287081.540000
-Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd|
-Z122 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd|
+Z119 !s108 1428718136.599000
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd|
+Z121 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_mux.vhd|
 !i113 1
 R14
 R15
@@ -676,72 +678,72 @@ VLDiSlSPNAzfcXEaiBLKS[3
 !s100 BM;WBa`d^l<`n6=PJd4;h1
 R9
 32
-R119
+R118
 !i10b 1
+R119
 R120
 R121
-R122
 !i113 1
 R14
 R15
 Etest_tp
-Z123 w1428286129
+Z122 w1428717579
 R4
 R5
 R6
-Z124 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd
-Z125 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd
+Z123 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\test_tp.vhd
+Z124 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\test_tp.vhd
 l0
 L4
 VGzaGPYEIIGfcCAb0bI7W90
 !s100 NE8TYDi]KPla8<KYfo7Dm0
 R9
 32
-Z126 !s110 1428287086
+Z125 !s110 1428718139
 !i10b 1
-Z127 !s108 1428287086.233000
-Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd|
-Z129 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd|
+Z126 !s108 1428718139.833000
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\test_tp.vhd|
+Z128 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\test_tp.vhd|
 !i113 1
 R14
 R15
 Abeh
-Z130 DEx4 work 2 tp 0 22 G3TiQlY1cYhT:PoD74OgY0
+Z129 DEx4 work 2 tp 0 22 G3TiQlY1cYhT:PoD74OgY0
 R4
 R5
-Z131 DEx4 work 7 test_tp 0 22 GzaGPYEIIGfcCAb0bI7W90
+Z130 DEx4 work 7 test_tp 0 22 GzaGPYEIIGfcCAb0bI7W90
 l13
 L7
-Z132 V8aZ^I3Y2:6h4fWEQkZOK`0
-Z133 !s100 n0e7bVb^`NmAmR1MIH94n1
+Z131 V?SmGRDna?Z1zA]iddVUGU2
+Z132 !s100 cVnG>]90USbj0N>OQH0jg0
 R9
 32
-R126
+R125
 !i10b 1
+R126
 R127
 R128
-R129
 !i113 1
 R14
 R15
 Etp
-Z134 w1428287064
+Z133 w1428287064
 R4
 R5
 R6
-Z135 8C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd
-Z136 FC:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd
+Z134 8C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\contador_tp.vhd
+Z135 FC:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\contador_tp.vhd
 l0
 L5
 VG3TiQlY1cYhT:PoD74OgY0
 !s100 Ra:`gazaV`1N^B3KRQK@H0
 R9
 32
-Z137 !s110 1428287085
+R125
 !i10b 1
-Z138 !s108 1428287085.078000
-Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd|
-Z140 !s107 C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd|
+Z136 !s108 1428718139.005000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\contador_tp.vhd|
+Z138 !s107 C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\contador_tp.vhd|
 !i113 1
 R14
 R15
@@ -754,18 +756,18 @@ R56
 R58
 R4
 R5
-R130
+R129
 l17
 L14
 V5MXU9ljC4IbDHL54X^A>m3
 !s100 EDD4WQ^3dX;NOamOR?Fn<2
 R9
 32
-R137
+R125
 !i10b 1
+R136
+R137
 R138
-R139
-R140
 !i113 1
 R14
 R15

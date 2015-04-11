@@ -1,20 +1,4 @@
-{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/controlador_disp.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity disp_ctrl
--- Compiling architecture Behavioral of disp_ctrl
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Loading entity counter
--- Loading entity bits_to_an
--- Loading entity mux2
--- Loading entity bcd_to_7seg
--- Loading entity generador
-
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd}
+{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/four_counters.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\four_counters.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -26,7 +10,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading entity counter
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/test_tp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\test_tp.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -55,7 +39,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package NUMERIC_STD
 -- Loading entity contador_4dig
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bits2an.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bits2an.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -63,7 +47,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Compiling entity bits_to_an
 -- Compiling architecture Behavioral of bits_to_an
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/gen_ena.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\gen_ena.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -87,7 +71,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package NUMERIC_STD
 -- Loading entity counter
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/counter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\counter.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -111,7 +95,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package NUMERIC_STD
 -- Loading entity bcd_to_7seg
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/bcd27seg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\bcd27seg.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -135,7 +119,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package NUMERIC_STD
 -- Loading entity mux2
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\FedeA\Facu\Sistemas Digitales\workspace\sistemas-digitales\TP1\mux.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -158,19 +142,5 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
 -- Loading entity generador
-
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP1/contador_tp.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tp
--- Compiling architecture Behavioral of tp
--- Loading entity disp_ctrl
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Loading entity generador
--- Loading entity contador_4dig
 
 } {} {}}

@@ -7,7 +7,7 @@ entity counter is
 	generic ( N : integer := 4 );
 	port( en:   in  std_logic;
     	      clock:in  std_logic;
-	      rst:  in  std_logic;
+	      rst:  in  std_logic := '0';
 	      OV:   in  std_logic_vector(N-1 downto 0);	
 
               over: out std_logic;
@@ -18,7 +18,7 @@ architecture Behavioral of counter is
 	--constant OV : std_logic_vector(N-1 downto 0) := "1001";	
 	signal salida: std_logic_vector(N-1 downto 0);
 begin
-   process(clock,rst,en)
+   process(clock,rst)
    begin
 	if rst='1' then
 	        salida <= ( others => '0' );
