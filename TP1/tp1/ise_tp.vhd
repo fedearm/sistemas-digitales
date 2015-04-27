@@ -24,7 +24,7 @@ architecture Behavioral of tp is
 	signal en: std_logic;
 begin
 	ctrl_disp: entity work.disp_ctrl(Behavioral)
-		port map(clk=>clk, rst=>rst, anodos=>an, seg7=>seg7, bcd0=>bcd0, bcd1=>bcd1, bcd2=>bcd2, bcd3=>bcd3);
+		port map(clk=>clk, rst=>'0', anodos=>an, seg7=>seg7, bcd0=>bcd0, bcd1=>bcd1, bcd2=>bcd2, bcd3=>bcd3);
 
 	generator_unit: entity work.generador(Beh)
 		generic map(N=>50000000)

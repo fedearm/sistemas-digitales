@@ -1,3 +1,21 @@
+# Spartan 3 Starter Kit
+#NET "clk" LOC = "T9";
+#NET "rst" LOC = "F12";
+#
+#NET "an<0>" LOC = "D14";
+#NET "an<1>" LOC = "G14";
+#NET "an<2>" LOC = "F14";
+#NET "an<3>" LOC = "E13";
+#
+#NET "seg7<0>" LOC = "E14";
+#NET "seg7<1>" LOC = "G13";
+#NET "seg7<2>" LOC = "N15";
+#NET "seg7<3>" LOC = "P15";
+#NET "seg7<4>" LOC = "R16";
+#NET "seg7<5>" LOC = "F13";
+#NET "seg7<6>" LOC = "N16";
+
+# Nexys 2
 NET "clk" LOC = "B8";
 NET "rst" LOC = "G18";
 

@@ -1,0 +1,9 @@
+AR sigma behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" sub00/vhpl08 1430086219
+AR counter behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" sub00/vhpl01 1430086212
+PH my_types_pkg NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" sub00/vhpl04 1430086215
+EN sigma NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" sub00/vhpl07 1430086218
+EN dff NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" sub00/vhpl02 1430086213
+EN counter NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" sub00/vhpl00 1430086211
+AR cont_bcd behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" sub00/vhpl06 1430086217
+AR dff behavioral "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" sub00/vhpl03 1430086214
+EN cont_bcd NULL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" sub00/vhpl05 1430086216
