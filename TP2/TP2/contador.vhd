@@ -24,7 +24,7 @@ begin
 		over <= '0';
 	elsif rising_edge(clock) then
 		over <= '0';
-		if en='1' or rising_edge(en) then
+		if en='1' then
 			if salida = OV then
 				salida <= ( others => '0');
 				over <= '1';

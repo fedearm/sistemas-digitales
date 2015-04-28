@@ -1,0 +1,8 @@
+vhdl work "multiplexor.vhd"
+vhdl work "generador.vhd"
+vhdl work "contador.vhd"
+vhdl work "bcd7seg.vhd"
+vhdl work "anodos.vhd"
+vhdl work "ctrl_disp.vhd"
+vhdl work "cont_bcd.vhd"
+vhdl work "topunit.vhd"

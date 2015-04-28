@@ -1,0 +1,529 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: tp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tp.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tp"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : tp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" in Library work.
+Architecture behavioral of Entity counter is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd" in Library work.
+Architecture behavioral of Entity bits_to_an is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd" in Library work.
+Architecture behavioral of Entity mux2 is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd" in Library work.
+Architecture behavioral of Entity bcd_to_7seg is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" in Library work.
+Architecture beh of Entity generador is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" in Library work.
+Architecture behavioral of Entity disp_ctrl is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" in Library work.
+Architecture behavioral of Entity cont_bcd is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" in Library work.
+Entity <tp> compiled.
+Entity <tp> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <tp> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <disp_ctrl> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <generador> in library <work> (architecture <Beh>) with generics.
+	N = 50
+
+Analyzing hierarchy for entity <cont_bcd> in library <work> (architecture <Behavioral>) with generics.
+	M = 8
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <Behavioral>) with generics.
+	N = 2
+
+Analyzing hierarchy for entity <bits_to_an> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <bcd_to_7seg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <generador> in library <work> (architecture <Beh>) with generics.
+	N = 50000
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <Behavioral>) with generics.
+	N = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <tp> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 34: Unconnected output port 'over' of component 'cont_bcd'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 34: Unconnected output port 'out_0' of component 'cont_bcd'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 34: Unconnected output port 'out_1' of component 'cont_bcd'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 34: Unconnected output port 'out_2' of component 'cont_bcd'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 34: Unconnected output port 'out_3' of component 'cont_bcd'.
+Entity <tp> analyzed. Unit <tp> generated.
+
+Analyzing Entity <disp_ctrl> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" line 19: Unconnected output port 'over' of component 'counter'.
+Entity <disp_ctrl> analyzed. Unit <disp_ctrl> generated.
+
+Analyzing generic Entity <counter.1> in library <work> (Architecture <Behavioral>).
+	N = 2
+Entity <counter.1> analyzed. Unit <counter.1> generated.
+
+Analyzing Entity <bits_to_an> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd" line 17: Mux is complete : default of case is discarded
+Entity <bits_to_an> analyzed. Unit <bits_to_an> generated.
+
+Analyzing Entity <mux2> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd" line 20: Mux is complete : default of case is discarded
+Entity <mux2> analyzed. Unit <mux2> generated.
+
+Analyzing Entity <bcd_to_7seg> in library <work> (Architecture <Behavioral>).
+Entity <bcd_to_7seg> analyzed. Unit <bcd_to_7seg> generated.
+
+Analyzing generic Entity <generador.2> in library <work> (Architecture <Beh>).
+	N = 50000
+Entity <generador.2> analyzed. Unit <generador.2> generated.
+
+Analyzing generic Entity <generador.1> in library <work> (Architecture <Beh>).
+	N = 50
+Entity <generador.1> analyzed. Unit <generador.1> generated.
+
+Analyzing generic Entity <cont_bcd> in library <work> (Architecture <Behavioral>).
+	M = 8
+Entity <cont_bcd> analyzed. Unit <cont_bcd> generated.
+
+Analyzing generic Entity <counter.2> in library <work> (Architecture <Behavioral>).
+	N = 4
+Entity <counter.2> analyzed. Unit <counter.2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <generador_1>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd".
+    Found 1-bit register for signal <over>.
+    Found 6-bit up counter for signal <salida>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <generador_1> synthesized.
+
+
+Synthesizing Unit <counter_1>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd".
+    Found 1-bit register for signal <over>.
+    Found 2-bit up counter for signal <salida>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <counter_1> synthesized.
+
+
+Synthesizing Unit <bits_to_an>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd".
+    Found 1-of-4 decoder for signal <anodos>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <bits_to_an> synthesized.
+
+
+Synthesizing Unit <mux2>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <mux2> synthesized.
+
+
+Synthesizing Unit <bcd_to_7seg>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd".
+    Found 16x8-bit ROM for signal <seg7>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <bcd_to_7seg> synthesized.
+
+
+Synthesizing Unit <generador_2>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd".
+    Found 1-bit register for signal <over>.
+    Found 16-bit up counter for signal <salida>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <generador_2> synthesized.
+
+
+Synthesizing Unit <counter_2>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd".
+    Found 1-bit register for signal <over>.
+    Found 4-bit up counter for signal <salida>.
+    Found 4-bit comparator equal for signal <salida$cmp_eq0000> created at line 28.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <counter_2> synthesized.
+
+
+Synthesizing Unit <disp_ctrl>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd".
+Unit <disp_ctrl> synthesized.
+
+
+Synthesizing Unit <cont_bcd>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd".
+WARNING:Xst:646 - Signal <en_x<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <cont_bcd> synthesized.
+
+
+Synthesizing Unit <tp>.
+    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd".
+Unit <tp> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 8
+ 6-bit up counter                                      : 1
+# Registers                                            : 11
+ 1-bit register                                        : 11
+# Comparators                                          : 8
+ 4-bit comparator equal                                : 8
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 8
+ 6-bit up counter                                      : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Comparators                                          : 8
+ 4-bit comparator equal                                : 8
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <u_c7/over> of sequential type is unconnected in block <cont_bcd>.
+WARNING:Xst:2677 - Node <ctrl_disp/cont_2b_unit/over> of sequential type is unconnected in block <tp>.
+
+Optimizing unit <tp> ...
+
+Optimizing unit <cont_bcd> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block tp, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tp.ngr
+Top Level Output File Name         : tp
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 145
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 15
+#      LUT2                        : 10
+#      LUT2_L                      : 4
+#      LUT3                        : 20
+#      LUT3_D                      : 1
+#      LUT4                        : 41
+#      LUT4_D                      : 6
+#      MUXCY                       : 15
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 65
+#      FDC                         : 7
+#      FDCE                        : 32
+#      FDR                         : 24
+#      FDRE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       53  out of   4656     1%  
+ Number of Slice Flip Flops:             65  out of   9312     0%  
+ Number of 4 input LUTs:                108  out of   9312     1%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 65    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------+-------------------------+-------+
+Control Signal                      | Buffer(FF name)         | Load  |
+------------------------------------+-------------------------+-------+
+cont_bcd/reset(cont_bcd/reset1211:O)| NONE(cont_bcd/u_c0/over)| 39    |
+------------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.065ns (Maximum Frequency: 197.433MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.087ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.065ns (frequency: 197.433MHz)
+  Total number of paths / destination ports: 645 / 123
+-------------------------------------------------------------------------
+Delay:               5.065ns (Levels of Logic = 2)
+  Source:            ctrl_disp/generator_unit/salida_14 (FF)
+  Destination:       ctrl_disp/generator_unit/salida_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ctrl_disp/generator_unit/salida_14 to ctrl_disp/generator_unit/salida_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  ctrl_disp/generator_unit/salida_14 (ctrl_disp/generator_unit/salida_14)
+     LUT4_D:I0->O          1   0.704   0.499  ctrl_disp/generator_unit/salida_cmp_eq000017 (ctrl_disp/generator_unit/salida_cmp_eq000017)
+     LUT4:I1->O           16   0.704   1.034  ctrl_disp/generator_unit/salida_cmp_eq000064 (ctrl_disp/generator_unit/salida_cmp_eq0000)
+     FDR:R                     0.911          ctrl_disp/generator_unit/salida_0
+    ----------------------------------------
+    Total                      5.065ns (2.910ns logic, 2.155ns route)
+                                       (57.5% logic, 42.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 204 / 11
+-------------------------------------------------------------------------
+Offset:              8.087ns (Levels of Logic = 4)
+  Source:            ctrl_disp/cont_2b_unit/salida_0 (FF)
+  Destination:       seg7<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ctrl_disp/cont_2b_unit/salida_0 to seg7<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            15   0.591   1.192  ctrl_disp/cont_2b_unit/salida_0 (ctrl_disp/cont_2b_unit/salida_0)
+     LUT3:I0->O            1   0.704   0.000  ctrl_disp/mux_unit/Mmux_output_31 (ctrl_disp/mux_unit/Mmux_output_31)
+     MUXF5:I1->O           7   0.321   0.883  ctrl_disp/mux_unit/Mmux_output_2_f5_0 (ctrl_disp/out_mux<1>)
+     LUT4:I0->O            1   0.704   0.420  ctrl_disp/bcd_to_seg7_unit/Mrom_seg721 (seg7_2_OBUF)
+     OBUF:I->O                 3.272          seg7_2_OBUF (seg7<2>)
+    ----------------------------------------
+    Total                      8.087ns (5.592ns logic, 2.495ns route)
+                                       (69.1% logic, 30.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.80 secs
+ 
+--> 
+
+Total memory usage is 236656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

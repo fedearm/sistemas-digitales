@@ -11,13 +11,16 @@ architecture Beh of test_counter_4dig is
 	constant M: integer := 8;
 
 	signal enable : std_logic:= '0';
-   	signal clk : std_logic:= '0';
-	signal reset : std_logic:= '0';
-	signal output : salidas_bcd := (M-1 downto 0 => "0000");
+   	signal clk :    std_logic:= '0';
+	signal reset :  std_logic:= '0';
+	signal out_0,out_1,out_2,out_3,out_4,out_5,out_6,out_7 : std_logic_vector(3 downto 0) := "0000";
 
 begin
 	uut: entity work.cont_bcd(Behavioral)
-		port map(en=>enable, rst=>reset, clk=>clk, out_x=>output);
+		port map(en=>enable, rst=>reset, clk=>clk, 
+			out_0=>out_0, out_1=>out_1, out_2=>out_2, out_3=>out_3,
+			out_4=>out_4, out_5=>out_5, out_6=>out_6, out_7=>out_7
+		);
 
 	clk <= not clk after 10 ns;
   
