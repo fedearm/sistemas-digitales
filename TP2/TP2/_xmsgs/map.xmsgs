@@ -11,5 +11,8 @@
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
+<msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">sigma_unit/dff_unit/nq</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The register symbol &quot;sigma_unit/dff_unit/nq&quot; has no connections inside the I/O component.</arg>
+</msg>
+
 </messages>
 

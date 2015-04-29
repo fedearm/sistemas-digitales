@@ -5,21 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">34</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">over</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">34</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">34</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">34</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_2</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
-</msg>
-
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">34</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_3</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
-</msg>
-
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd</arg>&quot; line <arg fmt="%d" index="2">19</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">over</arg>&apos; of component &apos;<arg fmt="%s" index="4">counter</arg>&apos;.
 </msg>
 
@@ -29,13 +14,198 @@
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd</arg>&quot; line <arg fmt="%d" index="2">20</arg>: Mux is complete : default of case is discarded
 </msg>
 
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_0</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_1</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_2</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_3</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_4</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_5</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_6</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">out_7</arg>&apos; of component &apos;<arg fmt="%s" index="4">cont_bcd</arg>&apos;.
+</msg>
+
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">en_x&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">ov_periodo</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">ov_medido</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ot3</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ot2</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ot1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">ot0</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">od3</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">od2</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">od1</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">od0</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">en</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">generator_unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">cont_per_unit</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">sigma_unit</arg>&gt;.
+It will be removed from the design.
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">u_c7/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cont_bcd</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">generator_unit/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ctrl_disp/cont_2b_unit/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c6/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c5/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c4/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c3/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c2/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c1/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c0/over</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c7/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c7/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c7/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c7/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c6/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c6/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c6/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c6/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c5/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c5/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c5/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c5/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c4/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c4/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c4/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c4/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c3/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c3/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c3/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c3/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c2/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c2/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c2/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c2/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c1/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c1/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c1/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c1/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c0/salida_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c0/salida_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c0/salida_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">sigma_unit/cont_per_unit/u_c0/salida_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">tp</arg>&gt;.
 </msg>
 
 </messages>

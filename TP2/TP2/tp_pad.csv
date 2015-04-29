@@ -1,7 +1,7 @@
 #Release 14.5 - par P.58f (nt64)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Mon Apr 27 23:49:04 2015
+#Tue Apr 28 23:21:11 2015
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -211,7 +211,7 @@ L13,,IBUF,IP,UNUSED,,1,,,,,,,,,
 L14,,IBUF,IP,UNUSED,,1,,,,,,,,,
 L15,,DIFFS,IO_L09N_1/A11,UNUSED,,1,,,,,,,,,
 L16,,DIFFM,IO_L09P_1/A12,UNUSED,,1,,,,,,,,,
-L17,,DIFFS,IO_L10N_1/VREF_1,UNUSED,,1,,,,,,,,,
+L17,nq_out,IOB,IO_L10N_1/VREF_1,OUTPUT,LVCMOS25*,1,12,SLOW,NONE**,,,LOCATED,YES,NONE,
 L18,seg7<6>,IOB,IO_L10P_1,OUTPUT,LVCMOS25*,1,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 M1,,IBUF,IP,UNUSED,,3,,,,,,,,,
 M2,,,VCCAUX,,,,,,,,2.5,,,,
@@ -227,7 +227,7 @@ M11,,,VCCO_2,,,2,,,,,any******,,,,
 M12,,,GND,,,,,,,,,,,,
 M13,,DIFFS,IO_L05N_1/VREF_1,UNUSED,,1,,,,,,,,,
 M14,,DIFFM,IO_L05P_1,UNUSED,,1,,,,,,,,,
-M15,,DIFFM,IO_L07P_1,UNUSED,,1,,,,,,,,,
+M15,an_in,IBUF,IO_L07P_1,INPUT,LVCMOS25*,1,,,,NONE,,LOCATED,NO,NONE,
 M16,,DIFFS,IO_L07N_1,UNUSED,,1,,,,,,,,,
 M17,,,VCCAUX,,,,,,,,2.5,,,,
 M18,,DIFFS,IO_L08N_1,UNUSED,,1,,,,,,,,,
