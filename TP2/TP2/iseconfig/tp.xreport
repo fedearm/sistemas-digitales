@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-28T22:26:57</DateModified>
+  <DateModified>2015-05-01T16:01:48</DateModified>
   <ModuleName>tp</ModuleName>
-  <SummaryTimeStamp>2015-04-28T22:26:42</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-05-01T15:44:04</SummaryTimeStamp>
   <SavedFilePath>C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/iseconfig/tp.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-28T19:16:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

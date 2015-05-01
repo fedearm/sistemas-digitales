@@ -5,6 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">rst_IBUF</arg> has no load.
+</msg>
+
 <msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
 </msg>
 
@@ -12,6 +15,12 @@
 </msg>
 
 <msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">sigma_unit/dff_unit/nq</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The register symbol &quot;sigma_unit/dff_unit/nq&quot; has no connections inside the I/O component.</arg>
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">vga_unit/hay_char</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">rst_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

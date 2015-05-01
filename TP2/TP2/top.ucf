@@ -3,6 +3,7 @@ NET "clk" LOC = "B8";
 NET "rst" LOC = "G18";
 NET "an_in" LOC = "M15";
 NET "nq_out" LOC = "L17";
+NET "rst_sd" LOC = "B18";
 
 NET "an<0>" LOC = "F17";
 NET "an<1>" LOC = "H17";
@@ -16,3 +17,14 @@ NET "seg7<3>" LOC = "D16";
 NET "seg7<2>" LOC = "G14";
 NET "seg7<1>" LOC = "J17";
 NET "seg7<0>" LOC = "H14";
+
+NET "hs" LOC = "T4";
+NET "vs" LOC = "U3";
+NET "red_o<2>" LOC = "R8";
+NET "red_o<1>" LOC = "T8";
+NET "red_o<0>" LOC = "R9";
+NET "grn_o<2>" LOC = "P6";
+NET "grn_o<1>" LOC = "P8";
+NET "grn_o<0>" LOC = "N8";
+NET "blu_o<1>" LOC = "U4";
+NET "blu_o<0>" LOC = "U5";

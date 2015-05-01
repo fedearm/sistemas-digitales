@@ -19,6 +19,7 @@ architecture Behavioral of sigma is
 	signal rst_medido: std_logic;
 	signal ena_cont: std_logic;
 	signal ena_medido: std_logic;
+	signal shft_reg: std_logic;
 	signal od0,od1,od2,od3,od4,od5,od6,od7: std_logic_vector(3 downto 0);
 	signal ot0,ot1,ot2,ot3,ot4,ot5,ot6,ot7: std_logic_vector(3 downto 0);
 begin
