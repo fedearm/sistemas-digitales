@@ -28,10 +28,6 @@ begin
 	ctrl_disp: entity work.disp_ctrl(Behavioral)
 		port map(clk=>clk, rst=>'0', anodos=>an, seg7=>seg7, bcd0=>bcd0, bcd1=>bcd1, bcd2=>bcd2, bcd3=>bcd3);
 		
-	generator_unit: entity work.generador(Beh)
-		generic map(N=>50)
-		port map(clock=>clk, over=>en);
-
 	sigma_unit: entity work.sigma(Behavioral)
 		port map(rst=>rst_sd, clk=>clk, nq=>nq, analog_in=>an_in,
 			out_0=>bcd0, out_1=>bcd1, out_2=>bcd2, out_3=>bcd3);

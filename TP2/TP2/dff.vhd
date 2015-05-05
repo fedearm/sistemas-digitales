@@ -12,9 +12,8 @@ end dff;
 
 architecture Behavioral of dff is
 begin
-	--nq <= not q;
 
-   process (clk,rst,ce) is
+   process (clk,rst) is
    begin
       if rising_edge(clk) then  
          if (rst='1') then   

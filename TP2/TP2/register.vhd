@@ -11,13 +11,14 @@ end reg4;
 
 architecture Behavioral of reg4 is
 begin
+
   process(clk, rst)
   begin
     if rst = '1' then
       q_out <= ( others => '0' );
     elsif rising_edge(clk) then
 			if en='1' then
-			      q_out <= q_in;
+				q_out <= q_in;
 			end if;
     end if; 
   end process;

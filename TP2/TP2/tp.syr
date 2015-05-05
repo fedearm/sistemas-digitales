@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.20 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.20 secs
  
 --> Reading design: tp.prj
@@ -107,10 +107,7 @@ Slice Utilization Ratio Delta      : 5
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" in Library work.
 Architecture behavioral of Entity counter is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" in Library work.
-Entity <char_rom> compiled.
-Entity <char_rom> (Architecture <p>) compiled.
-Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" in Library work.
-Architecture beh of Entity generador is up to date.
+Architecture p of Entity char_rom is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" in Library work.
 Architecture behavioral of Entity dff is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" in Library work.
@@ -123,13 +120,15 @@ Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-d
 Architecture behavioral of Entity mux2 is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd" in Library work.
 Architecture behavioral of Entity bcd_to_7seg is up to date.
+Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" in Library work.
+Architecture beh of Entity generador is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" in Library work.
 Architecture behavioral of Entity disp_ctrl is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" in Library work.
-Architecture behavioral of Entity sigma is up to date.
+Entity <sigma> compiled.
+Entity <sigma> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" in Library work.
-Entity <vga_ctrl> compiled.
-Entity <vga_ctrl> (Architecture <vga_ctrl_arq>) compiled.
+Architecture vga_ctrl_arq of Entity vga_ctrl is up to date.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" in Library work.
 Architecture behavioral of Entity tp is up to date.
 
@@ -139,9 +138,6 @@ Architecture behavioral of Entity tp is up to date.
 Analyzing hierarchy for entity <tp> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <disp_ctrl> in library <work> (architecture <Behavioral>).
-
-Analyzing hierarchy for entity <generador> in library <work> (architecture <Beh>) with generics.
-	N = 50
 
 Analyzing hierarchy for entity <sigma> in library <work> (architecture <Behavioral>).
 
@@ -158,9 +154,6 @@ Analyzing hierarchy for entity <bcd_to_7seg> in library <work> (architecture <Be
 
 Analyzing hierarchy for entity <generador> in library <work> (architecture <Beh>) with generics.
 	N = 50000
-
-Analyzing hierarchy for entity <generador> in library <work> (architecture <Beh>) with generics.
-	N = 2
 
 Analyzing hierarchy for entity <dff> in library <work> (architecture <Behavioral>).
 
@@ -183,8 +176,8 @@ Analyzing hierarchy for entity <counter> in library <work> (architecture <Behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <tp> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 39: Unconnected output port 'pixel_row' of component 'vga_ctrl'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 39: Unconnected output port 'pixel_col' of component 'vga_ctrl'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 35: Unconnected output port 'pixel_row' of component 'vga_ctrl'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 35: Unconnected output port 'pixel_col' of component 'vga_ctrl'.
 Entity <tp> analyzed. Unit <tp> generated.
 
 Analyzing Entity <disp_ctrl> in library <work> (Architecture <Behavioral>).
@@ -206,28 +199,12 @@ Entity <mux2> analyzed. Unit <mux2> generated.
 Analyzing Entity <bcd_to_7seg> in library <work> (Architecture <Behavioral>).
 Entity <bcd_to_7seg> analyzed. Unit <bcd_to_7seg> generated.
 
-Analyzing generic Entity <generador.2> in library <work> (Architecture <Beh>).
+Analyzing generic Entity <generador> in library <work> (Architecture <Beh>).
 	N = 50000
-Entity <generador.2> analyzed. Unit <generador.2> generated.
-
-Analyzing generic Entity <generador.1> in library <work> (Architecture <Beh>).
-	N = 50
-Entity <generador.1> analyzed. Unit <generador.1> generated.
+Entity <generador> analyzed. Unit <generador> generated.
 
 Analyzing Entity <sigma> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_0' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_1' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_2' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_3' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_4' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_5' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_6' of component 'cont_bcd'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" line 38: Unconnected output port 'out_7' of component 'cont_bcd'.
 Entity <sigma> analyzed. Unit <sigma> generated.
-
-Analyzing generic Entity <generador.3> in library <work> (Architecture <Beh>).
-	N = 2
-Entity <generador.3> analyzed. Unit <generador.3> generated.
 
 Analyzing Entity <dff> in library <work> (Architecture <Behavioral>).
 Entity <dff> analyzed. Unit <dff> generated.
@@ -245,7 +222,7 @@ Analyzing generic Entity <reg4> in library <work> (Architecture <Behavioral>).
 Entity <reg4> analyzed. Unit <reg4> generated.
 
 Analyzing Entity <vga_ctrl> in library <work> (Architecture <vga_ctrl_arq>).
-WARNING:Xst:819 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 149: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 131: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <bcd3>, <bcd2>, <bcd1>, <rom_out>, <vidon>
 Entity <vga_ctrl> analyzed. Unit <vga_ctrl> generated.
 
@@ -253,7 +230,7 @@ Analyzing generic Entity <Char_ROM> in library <work> (Architecture <p>).
 	M = 3
 	N = 6
 	W = 8
-WARNING:Xst:790 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" line 179: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" line 191: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <Char_ROM> analyzed. Unit <Char_ROM> generated.
 
@@ -263,16 +240,6 @@ Entity <Char_ROM> analyzed. Unit <Char_ROM> generated.
 =========================================================================
 
 Performing bidirectional port resolution...
-
-Synthesizing Unit <generador_1>.
-    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd".
-    Found 1-bit register for signal <over>.
-    Found 6-bit up counter for signal <salida>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <generador_1> synthesized.
-
 
 Synthesizing Unit <counter_1>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd".
@@ -308,24 +275,14 @@ Synthesizing Unit <bcd_to_7seg>.
 Unit <bcd_to_7seg> synthesized.
 
 
-Synthesizing Unit <generador_2>.
+Synthesizing Unit <generador>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd".
     Found 1-bit register for signal <over>.
     Found 16-bit up counter for signal <salida>.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
-Unit <generador_2> synthesized.
-
-
-Synthesizing Unit <generador_3>.
-    Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd".
-    Found 1-bit register for signal <over>.
-    Found 2-bit up counter for signal <salida>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <generador_3> synthesized.
+Unit <generador> synthesized.
 
 
 Synthesizing Unit <dff>.
@@ -361,7 +318,7 @@ Synthesizing Unit <Char_ROM>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd".
 WARNING:Xst:646 - Signal <char_addr_aux<8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1781 - Signal <RAM> is used but never assigned. Tied to default value.
-    Found 256x8-bit ROM for signal <rom_out$varindex0000> created at line 179.
+    Found 256x8-bit ROM for signal <rom_out$varindex0000> created at line 191.
     Found 1-bit 8-to-1 multiplexer for signal <rom_out>.
     Summary:
 	inferred   1 ROM(s).
@@ -384,15 +341,15 @@ WARNING:Xst:737 - Found 6-bit latch for signal <char_address>. Latches may be ge
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 1-bit register for signal <clkdiv_flag>.
     Found 10-bit up counter for signal <hc>.
-    Found 10-bit comparator less for signal <hs$cmp_lt0000> created at line 108.
-    Found 10-bit subtractor for signal <pixel_col$addsub0000> created at line 111.
-    Found 10-bit subtractor for signal <pixel_row$addsub0000> created at line 112.
+    Found 10-bit comparator less for signal <hs$cmp_lt0000> created at line 119.
+    Found 10-bit subtractor for signal <pixel_col$addsub0000> created at line 122.
+    Found 10-bit subtractor for signal <pixel_row$addsub0000> created at line 123.
     Found 10-bit up counter for signal <vc>.
-    Found 10-bit comparator greater for signal <vidon$cmp_gt0000> created at line 115.
-    Found 10-bit comparator greater for signal <vidon$cmp_gt0001> created at line 115.
-    Found 10-bit comparator less for signal <vidon$cmp_lt0000> created at line 115.
-    Found 10-bit comparator less for signal <vidon$cmp_lt0001> created at line 115.
-    Found 10-bit comparator less for signal <vs$cmp_lt0000> created at line 109.
+    Found 10-bit comparator greater for signal <vidon$cmp_gt0000> created at line 126.
+    Found 10-bit comparator greater for signal <vidon$cmp_gt0001> created at line 126.
+    Found 10-bit comparator less for signal <vidon$cmp_lt0000> created at line 126.
+    Found 10-bit comparator less for signal <vidon$cmp_lt0001> created at line 126.
+    Found 10-bit comparator less for signal <vs$cmp_lt0000> created at line 120.
     Found 1-bit register for signal <vsenable>.
     Summary:
 	inferred   2 Counter(s).
@@ -404,30 +361,33 @@ Unit <vga_ctrl> synthesized.
 
 Synthesizing Unit <cont_bcd>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd".
-WARNING:Xst:646 - Signal <en_x<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <en_x<6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en_x<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <cont_bcd> synthesized.
 
 
 Synthesizing Unit <sigma>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd".
-WARNING:Xst:1780 - Signal <shft_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ov_periodo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ov_medido> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <ot3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ot2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ot1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ot0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <od3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <od2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <od1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <od0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <rst_per> equivalent to <rst_medido> has been removed
+    Found 1-bit register for signal <fin_per>.
+    Found 1-bit register for signal <rst_medido>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
 Unit <sigma> synthesized.
 
 
 Synthesizing Unit <tp>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:646 - Signal <en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <tp> synthesized.
 
 
@@ -440,21 +400,20 @@ Macro Statistics
  256x8-bit ROM                                         : 1
 # Adders/Subtractors                                   : 2
  10-bit subtractor                                     : 2
-# Counters                                             : 22
+# Counters                                             : 18
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
- 2-bit up counter                                      : 2
- 4-bit up counter                                      : 16
- 6-bit up counter                                      : 1
-# Registers                                            : 28
- 1-bit register                                        : 24
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 14
+# Registers                                            : 26
+ 1-bit register                                        : 22
  4-bit register                                        : 4
 # Latches                                              : 1
  6-bit latch                                           : 1
-# Comparators                                          : 22
+# Comparators                                          : 20
  10-bit comparator greater                             : 2
  10-bit comparator less                                : 4
- 4-bit comparator equal                                : 16
+ 4-bit comparator equal                                : 14
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -467,10 +426,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <generator_unit> is unconnected in block <tp>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <cont_per_unit> is unconnected in block <sigma_unit>.
-   It will be removed from the design.
 WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
@@ -482,20 +437,19 @@ Macro Statistics
  256x8-bit ROM                                         : 1
 # Adders/Subtractors                                   : 2
  10-bit subtractor                                     : 2
-# Counters                                             : 22
+# Counters                                             : 18
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
- 2-bit up counter                                      : 2
- 4-bit up counter                                      : 16
- 6-bit up counter                                      : 1
-# Registers                                            : 40
- Flip-Flops                                            : 40
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 14
+# Registers                                            : 38
+ Flip-Flops                                            : 38
 # Latches                                              : 1
  6-bit latch                                           : 1
-# Comparators                                          : 22
+# Comparators                                          : 20
  10-bit comparator greater                             : 2
  10-bit comparator less                                : 4
- 4-bit comparator equal                                : 16
+ 4-bit comparator equal                                : 14
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -509,8 +463,7 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <char_address_4> in Unit <vga_ctrl> is equivalent to the following FF/Latch, which will be removed : <char_address_5> 
 WARNING:Xst:1710 - FF/Latch <char_address_4> (without init value) has a constant value of 0 in block <vga_ctrl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <u_c7/over> of sequential type is unconnected in block <cont_bcd>.
-WARNING:Xst:2677 - Node <generator_unit/over> of sequential type is unconnected in block <tp>.
+WARNING:Xst:2677 - Node <u_c6/over> of sequential type is unconnected in block <cont_bcd>.
 WARNING:Xst:2677 - Node <ctrl_disp/cont_2b_unit/over> of sequential type is unconnected in block <tp>.
 
 Optimizing unit <tp> ...
@@ -520,50 +473,12 @@ Optimizing unit <vga_ctrl> ...
 Optimizing unit <cont_bcd> ...
 
 Optimizing unit <sigma> ...
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c6/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c5/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c4/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c3/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c2/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c1/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c0/over> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c7/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c7/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c7/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c7/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c6/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c6/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c6/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c6/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c5/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c5/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c5/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c5/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c4/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c4/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c4/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c4/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c3/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c3/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c3/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c3/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c2/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c2/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c2/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c2/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c1/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c1/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c1/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c1/salida_3> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c0/salida_0> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c0/salida_1> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c0/salida_2> of sequential type is unconnected in block <tp>.
-WARNING:Xst:2677 - Node <sigma_unit/cont_per_unit/u_c0/salida_3> of sequential type is unconnected in block <tp>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block tp, actual ratio is 2.
-FlipFlop vga_unit/vc_0 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block tp, actual ratio is 3.
+FlipFlop vga_unit/vc_1 has been replicated 1 time(s)
+FlipFlop vga_unit/vc_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -571,8 +486,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 102
- Flip-Flops                                            : 102
+# Registers                                            : 131
+ Flip-Flops                                            : 131
 
 =========================================================================
 
@@ -601,28 +516,29 @@ Design Statistics
 # IOs                              : 27
 
 Cell Usage :
-# BELS                             : 300
+# BELS                             : 360
 #      GND                         : 1
-#      INV                         : 14
+#      INV                         : 19
 #      LUT1                        : 33
-#      LUT2                        : 15
-#      LUT2_L                      : 5
-#      LUT3                        : 40
-#      LUT3_D                      : 1
+#      LUT2                        : 17
+#      LUT2_L                      : 6
+#      LUT3                        : 53
 #      LUT3_L                      : 1
-#      LUT4                        : 95
-#      LUT4_D                      : 5
-#      MUXCY                       : 33
-#      MUXF5                       : 19
-#      MUXF6                       : 1
+#      LUT4                        : 120
+#      LUT4_D                      : 9
+#      LUT4_L                      : 1
+#      MUXCY                       : 39
+#      MUXF5                       : 18
+#      MUXF6                       : 4
+#      MUXF7                       : 2
 #      VCC                         : 1
 #      XORCY                       : 36
-# FlipFlops/Latches                : 106
-#      FDC                         : 7
-#      FDCE                        : 48
+# FlipFlops/Latches                : 135
+#      FDC                         : 12
+#      FDCE                        : 72
 #      FDE                         : 1
-#      FDR                         : 22
-#      FDRE                        : 23
+#      FDR                         : 21
+#      FDRE                        : 24
 #      FDS                         : 1
 #      LD                          : 4
 # Clock Buffers                    : 1
@@ -637,9 +553,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      110  out of   4656     2%  
- Number of Slice Flip Flops:            105  out of   9312     1%  
- Number of 4 input LUTs:                209  out of   9312     2%  
+ Number of Slices:                      137  out of   4656     2%  
+ Number of Slice Flip Flops:            134  out of   9312     1%  
+ Number of 4 input LUTs:                259  out of   9312     2%  
  Number of IOs:                          27
  Number of bonded IOBs:                  26  out of    232    11%  
     IOB Flip Flops:                       1
@@ -666,7 +582,7 @@ Clock Information:
 ---------------------------------------+---------------------------------+-------+
 Clock Signal                           | Clock buffer(FF name)           | Load  |
 ---------------------------------------+---------------------------------+-------+
-clk                                    | BUFGP                           | 102   |
+clk                                    | BUFGP                           | 131   |
 vga_unit/hay_char(vga_unit/hay_char1:O)| NONE(*)(vga_unit/char_address_3)| 4     |
 ---------------------------------------+---------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -676,20 +592,21 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-------------------------------------------------------------------------+-------------------------------------------+-------+
-Control Signal                                                          | Buffer(FF name)                           | Load  |
-------------------------------------------------------------------------+-------------------------------------------+-------+
-sigma_unit/cont_sigma_unit/reset(sigma_unit/cont_sigma_unit/reset1211:O)| NONE(sigma_unit/cont_sigma_unit/u_c0/over)| 39    |
-rst_sd                                                                  | IBUF                                      | 16    |
-------------------------------------------------------------------------+-------------------------------------------+-------+
+----------------------------------------------------------------------+-------------------------------------------+-------+
+Control Signal                                                        | Buffer(FF name)                           | Load  |
+----------------------------------------------------------------------+-------------------------------------------+-------+
+sigma_unit/cont_per_unit/reset(sigma_unit/cont_per_unit/reset97:O)    | NONE(sigma_unit/cont_per_unit/u_c0/over)  | 34    |
+sigma_unit/cont_sigma_unit/reset(sigma_unit/cont_sigma_unit/reset97:O)| NONE(sigma_unit/cont_sigma_unit/u_c0/over)| 34    |
+rst_sd                                                                | IBUF                                      | 16    |
+----------------------------------------------------------------------+-------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 5.350ns (Maximum Frequency: 186.916MHz)
-   Minimum input arrival time before clock: 3.214ns
-   Maximum output required time after clock: 14.156ns
+   Minimum period: 5.338ns (Maximum Frequency: 187.336MHz)
+   Minimum input arrival time before clock: 3.197ns
+   Maximum output required time after clock: 13.087ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -698,32 +615,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.350ns (frequency: 186.916MHz)
-  Total number of paths / destination ports: 1009 / 197
+  Clock period: 5.338ns (frequency: 187.336MHz)
+  Total number of paths / destination ports: 1190 / 262
 -------------------------------------------------------------------------
-Delay:               5.350ns (Levels of Logic = 2)
-  Source:            vga_unit/clkdiv_flag (FF)
-  Destination:       vga_unit/vc_9 (FF)
+Delay:               5.338ns (Levels of Logic = 4)
+  Source:            sigma_unit/cont_per_unit/u_c5/salida_3 (FF)
+  Destination:       sigma_unit/fin_per (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: vga_unit/clkdiv_flag to vga_unit/vc_9
+  Data Path: sigma_unit/cont_per_unit/u_c5/salida_3 to sigma_unit/fin_per
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             15   0.591   1.052  vga_unit/clkdiv_flag (vga_unit/clkdiv_flag)
-     LUT4:I2->O            1   0.704   0.455  vga_unit/vc_and000010 (vga_unit/vc_and000010)
-     LUT4:I2->O           11   0.704   0.933  vga_unit/vc_and000017 (vga_unit/vc_and0000)
-     FDRE:R                    0.911          vga_unit/vc_0
+     FDCE:C->Q             4   0.591   0.762  sigma_unit/cont_per_unit/u_c5/salida_3 (sigma_unit/cont_per_unit/u_c5/salida_3)
+     LUT4:I0->O            2   0.704   0.451  sigma_unit/fin_per_cmp_eq00011 (sigma_unit/fin_per_cmp_eq0001)
+     LUT4:I3->O            1   0.704   0.000  sigma_unit/fin_per_not0001_wg_lut<4> (sigma_unit/fin_per_not0001_wg_lut<4>)
+     MUXCY:S->O            1   0.464   0.000  sigma_unit/fin_per_not0001_wg_cy<4> (sigma_unit/fin_per_not0001_wg_cy<4>)
+     MUXCY:CI->O           1   0.331   0.420  sigma_unit/fin_per_not0001_wg_cy<5> (sigma_unit/fin_per_not0001)
+     FDR:R                     0.911          sigma_unit/fin_per
     ----------------------------------------
-    Total                      5.350ns (2.910ns logic, 2.440ns route)
-                                       (54.4% logic, 45.6% route)
+    Total                      5.338ns (3.705ns logic, 1.633ns route)
+                                       (69.4% logic, 30.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              3.214ns (Levels of Logic = 1)
+Offset:              3.197ns (Levels of Logic = 1)
   Source:            rst_sd (PAD)
   Destination:       sigma_unit/dff_unit/nq (FF)
   Destination Clock: clk rising
@@ -732,17 +651,17 @@ Offset:              3.214ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.218   1.085  rst_sd_IBUF (rst_sd_IBUF)
+     IBUF:I->O            18   1.218   1.068  rst_sd_IBUF (rst_sd_IBUF)
      FDS:S                     0.911          sigma_unit/dff_unit/nq
     ----------------------------------------
-    Total                      3.214ns (2.129ns logic, 1.085ns route)
-                                       (66.2% logic, 33.8% route)
+    Total                      3.197ns (2.129ns logic, 1.068ns route)
+                                       (66.6% logic, 33.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1481 / 22
+  Total number of paths / destination ports: 1537 / 22
 -------------------------------------------------------------------------
-Offset:              14.156ns (Levels of Logic = 8)
+Offset:              13.087ns (Levels of Logic = 8)
   Source:            vga_unit/vc_4 (FF)
   Destination:       grn_o<2> (PAD)
   Source Clock:      clk rising
@@ -752,23 +671,23 @@ Offset:              14.156ns (Levels of Logic = 8)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             3   0.591   0.706  vga_unit/vc_4 (vga_unit/vc_4)
-     LUT4:I0->O            3   0.704   0.610  vga_unit/vc_and000014 (vga_unit/N8)
-     LUT4:I1->O            3   0.704   0.610  vga_unit/char_address_cmp_eq00011 (vga_unit/char_address_cmp_eq0001)
-     LUT4:I1->O            1   0.704   0.424  vga_unit/char_address_and00011_SW0 (N27)
-     LUT4:I3->O            9   0.704   0.995  vga_unit/char_address_and00011 (vga_unit/N7)
-     LUT4:I0->O            5   0.704   0.808  vga_unit/hay_char1 (vga_unit/hay_char)
-     LUT3:I0->O            1   0.704   0.455  vga_unit/blu_o_and0000315 (vga_unit/blu_o_and0000315)
-     LUT4:I2->O            8   0.704   0.757  vga_unit/blu_o_and0000329 (blu_o_0_OBUF)
+     LUT4:I0->O            3   0.704   0.706  vga_unit/vc_and000022 (vga_unit/N48)
+     LUT4:I0->O            1   0.704   0.000  vga_unit/char_address_and000021 (vga_unit/char_address_and00002)
+     MUXF5:I0->O           3   0.321   0.706  vga_unit/char_address_and00002_f5 (vga_unit/N45)
+     LUT4:I0->O            5   0.704   0.637  vga_unit/char_address_and0000 (vga_unit/char_address_and0000)
+     LUT4:I3->O            5   0.704   0.668  vga_unit/hay_char1 (vga_unit/hay_char)
+     LUT4:I2->O            1   0.704   0.499  vga_unit/blu_o_and0000164 (vga_unit/blu_o_and0000164)
+     LUT4:I1->O            8   0.704   0.757  vga_unit/blu_o_and0000194 (blu_o_0_OBUF)
      OBUF:I->O                 3.272          grn_o_2_OBUF (grn_o<2>)
     ----------------------------------------
-    Total                     14.156ns (8.791ns logic, 5.365ns route)
-                                       (62.1% logic, 37.9% route)
+    Total                     13.087ns (8.408ns logic, 4.679ns route)
+                                       (64.2% logic, 35.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_unit/hay_char'
-  Total number of paths / destination ports: 528 / 8
+  Total number of paths / destination ports: 584 / 8
 -------------------------------------------------------------------------
-Offset:              12.091ns (Levels of Logic = 8)
+Offset:              12.238ns (Levels of Logic = 8)
   Source:            vga_unit/char_address_0 (LATCH)
   Destination:       grn_o<2> (PAD)
   Source Clock:      vga_unit/hay_char falling
@@ -777,30 +696,30 @@ Offset:              12.091ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              21   0.676   1.303  vga_unit/char_address_0 (vga_unit/char_address_0)
-     LUT4:I0->O            1   0.704   0.499  vga_unit/char_rom_unit/Mrom_rom_out_varindex0000161 (vga_unit/char_rom_unit/Mrom_rom_out_varindex000016)
-     LUT3:I1->O            1   0.704   0.000  vga_unit/char_rom_unit/Mmux_rom_out_151 (vga_unit/char_rom_unit/Mmux_rom_out_151)
-     MUXF5:I1->O           1   0.321   0.499  vga_unit/char_rom_unit/Mmux_rom_out_14_f5 (vga_unit/char_rom_unit/Mmux_rom_out_14_f5)
-     LUT3:I1->O            1   0.704   0.000  vga_unit/char_rom_unit/Mmux_rom_out_111 (vga_unit/char_rom_unit/Mmux_rom_out_111)
-     MUXF5:I0->O           1   0.321   0.499  vga_unit/char_rom_unit/Mmux_rom_out_9_f5 (vga_unit/char_rom_unit/Mmux_rom_out_9_f5)
-     LUT4:I1->O            1   0.704   0.424  vga_unit/blu_o_and0000148 (vga_unit/blu_o_and0000148)
-     LUT4:I3->O            8   0.704   0.757  vga_unit/blu_o_and0000329 (blu_o_0_OBUF)
+     LD:G->Q              28   0.676   1.436  vga_unit/char_address_0 (vga_unit/char_address_0)
+     LUT3:I0->O            2   0.704   0.526  vga_unit/char_rom_unit/Mrom_rom_out_varindex000011 (vga_unit/char_rom_unit/Mrom_rom_out_varindex00001)
+     LUT3:I1->O            1   0.704   0.000  vga_unit/char_rom_unit/Mmux_rom_out_13 (vga_unit/char_rom_unit/Mmux_rom_out_13)
+     MUXF5:I0->O           1   0.321   0.499  vga_unit/char_rom_unit/Mmux_rom_out_11_f5 (vga_unit/char_rom_unit/Mmux_rom_out_11_f5)
+     LUT4:I1->O            1   0.704   0.455  vga_unit/hc<0>1 (vga_unit/hc<0>1)
+     LUT3:I2->O            1   0.704   0.000  vga_unit/char_rom_unit/Mmux_rom_out_3 (vga_unit/char_rom_unit/Mmux_rom_out_3)
+     MUXF5:I1->O           1   0.321   0.455  vga_unit/char_rom_unit/Mmux_rom_out_2_f5 (vga_unit/rom_out1)
+     LUT4:I2->O            8   0.704   0.757  vga_unit/blu_o_and0000194 (blu_o_0_OBUF)
      OBUF:I->O                 3.272          grn_o_2_OBUF (grn_o<2>)
     ----------------------------------------
-    Total                     12.091ns (8.110ns logic, 3.981ns route)
-                                       (67.1% logic, 32.9% route)
+    Total                     12.238ns (8.110ns logic, 4.128ns route)
+                                       (66.3% logic, 33.7% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.61 secs
+Total CPU time to Xst completion: 9.38 secs
  
 --> 
 
 Total memory usage is 244848 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   80 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

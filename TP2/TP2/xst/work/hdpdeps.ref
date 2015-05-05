@@ -1,103 +1,101 @@
 V3 39
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd" 2015/04/27.23:19:20 P.58f
-EN work/bits_to_an 1430512997 \
+EN work/bits_to_an 1430868306 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd" \
       PB ieee/std_logic_1164 1364358218
-AR work/bits_to_an/Behavioral 1430512998 \
+AR work/bits_to_an/Behavioral 1430868307 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/anodos.vhd" \
-      EN work/bits_to_an 1430512997
+      EN work/bits_to_an 1430868306
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd" 2015/04/27.23:19:50 P.58f
-EN work/bcd_to_7seg 1430513001 \
+EN work/bcd_to_7seg 1430868310 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
       PB ieee/NUMERIC_STD 1364358223
-AR work/bcd_to_7seg/Behavioral 1430513002 \
+AR work/bcd_to_7seg/Behavioral 1430868311 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/bcd7seg.vhd" \
-      EN work/bcd_to_7seg 1430513001
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" 2015/05/01.17:43:00 P.58f
-EN work/Char_ROM 1430512987 \
+      EN work/bcd_to_7seg 1430868310
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" 2015/05/02.16:20:13 P.58f
+EN work/Char_ROM 1430868298 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/std_logic_arith 1364358219 \
       PB ieee/STD_LOGIC_UNSIGNED 1364358221
-AR work/Char_ROM/p 1430512988 \
+AR work/Char_ROM/p 1430868299 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd" \
-      EN work/Char_ROM 1430512987
+      EN work/Char_ROM 1430868298
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" 2015/04/27.22:58:02 P.58f
-EN work/counter 1430512985 \
+EN work/counter 1430868296 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
       PB ieee/NUMERIC_STD 1364358223
-AR work/counter/Behavioral 1430512986 \
+AR work/counter/Behavioral 1430868297 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd" \
-      EN work/counter 1430512985
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" 2015/04/28.20:34:12 P.58f
-EN work/cont_bcd 1430512993 \
+      EN work/counter 1430868296
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" 2015/05/04.18:51:42 P.58f
+EN work/cont_bcd 1430868302 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/cont_bcd/Behavioral 1430512994 \
+AR work/cont_bcd/Behavioral 1430868303 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd" \
-      EN work/cont_bcd 1430512993 AR work/counter/Behavioral 1430512986
+      EN work/cont_bcd 1430868302 AR work/counter/Behavioral 1430868297
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" 2015/04/27.23:21:07 P.58f
-EN work/disp_ctrl 1430513003 \
+EN work/disp_ctrl 1430868314 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" \
       PB ieee/std_logic_1164 1364358218
-AR work/disp_ctrl/Behavioral 1430513004 \
+AR work/disp_ctrl/Behavioral 1430868315 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd" \
-      EN work/disp_ctrl 1430513003 AR work/counter/Behavioral 1430512986 \
-      AR work/bits_to_an/Behavioral 1430512998 AR work/mux2/Behavioral 1430513000 \
-      AR work/bcd_to_7seg/Behavioral 1430513002 AR work/generador/Beh 1430512990
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" 2015/04/26.01:58:32 P.58f
-EN work/dff 1430512991 \
+      EN work/disp_ctrl 1430868314 AR work/counter/Behavioral 1430868297 \
+      AR work/bits_to_an/Behavioral 1430868307 AR work/mux2/Behavioral 1430868309 \
+      AR work/bcd_to_7seg/Behavioral 1430868311 AR work/generador/Beh 1430868313
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" 2015/05/04.18:44:33 P.58f
+EN work/dff 1430868300 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" \
       PB ieee/std_logic_1164 1364358218
-AR work/dff/Behavioral 1430512992 \
+AR work/dff/Behavioral 1430868301 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/dff.vhd" \
-      EN work/dff 1430512991
+      EN work/dff 1430868300
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" 2015/04/25.18:53:11 P.58f
-EN work/generador 1430512989 \
+EN work/generador 1430868312 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
       PB ieee/NUMERIC_STD 1364358223
-AR work/generador/Beh 1430512990 \
+AR work/generador/Beh 1430868313 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd" \
-      EN work/generador 1430512989
+      EN work/generador 1430868312
 FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd" 2015/04/27.23:21:49 P.58f
-EN work/mux2 1430512999 \
+EN work/mux2 1430868308 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
       PB ieee/NUMERIC_STD 1364358223
-AR work/mux2/Behavioral 1430513000 \
+AR work/mux2/Behavioral 1430868309 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd" \
-      EN work/mux2 1430512999
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/register.vhd" 2015/05/01.12:08:51 P.58f
-EN work/reg4 1430512995 \
+      EN work/mux2 1430868308
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/register.vhd" 2015/05/05.20:12:58 P.58f
+EN work/reg4 1430868304 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/register.vhd" \
       PB ieee/std_logic_1164 1364358218
-AR work/reg4/Behavioral 1430512996 \
+AR work/reg4/Behavioral 1430868305 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/register.vhd" \
-      EN work/reg4 1430512995
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" 2015/05/01.11:14:10 P.58f
-EN work/sigma 1430513005 \
+      EN work/reg4 1430868304
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" 2015/05/05.20:24:50 P.58f
+EN work/sigma 1430868316 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" \
       PB ieee/std_logic_1164 1364358218
-AR work/sigma/Behavioral 1430513006 \
+AR work/sigma/Behavioral 1430868317 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/sigma.vhd" \
-      EN work/sigma 1430513005 AR work/generador/Beh 1430512990 \
-      AR work/dff/Behavioral 1430512992 AR work/cont_bcd/Behavioral 1430512994 \
-      AR work/reg4/Behavioral 1430512996
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" 2015/05/01.17:20:54 P.58f
-EN work/tp 1430513009 \
+      EN work/sigma 1430868316 AR work/dff/Behavioral 1430868301 \
+      AR work/cont_bcd/Behavioral 1430868303 AR work/reg4/Behavioral 1430868305
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" 2015/05/05.20:22:37 P.58f
+EN work/tp 1430868320 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/tp/Behavioral 1430513010 \
+AR work/tp/Behavioral 1430868321 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" \
-      EN work/tp 1430513009 AR work/disp_ctrl/Behavioral 1430513004 \
-      AR work/generador/Beh 1430512990 AR work/sigma/Behavioral 1430513006 \
-      AR work/vga_ctrl/vga_ctrl_arq 1430513008
-FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" 2015/05/01.17:42:52 P.58f
-EN work/vga_ctrl 1430513007 \
+      EN work/tp 1430868320 AR work/disp_ctrl/Behavioral 1430868315 \
+      AR work/sigma/Behavioral 1430868317 AR work/vga_ctrl/vga_ctrl_arq 1430868319
+FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" 2015/05/05.20:23:14 P.58f
+EN work/vga_ctrl 1430868318 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" \
       PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/vga_ctrl/vga_ctrl_arq 1430513008 \
+AR work/vga_ctrl/vga_ctrl_arq 1430868319 \
       FL "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" \
-      EN work/vga_ctrl 1430513007 AR work/Char_ROM/p 1430512988
+      EN work/vga_ctrl 1430868318 AR work/Char_ROM/p 1430868299
