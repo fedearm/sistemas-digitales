@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity tp is
+	generic( IOSTANDARD : string := "LVDS_25");
 	port( clk:   in std_logic;
 	      rst:   in std_logic;
 			rst_sd:in std_logic;
@@ -24,7 +25,33 @@ architecture Behavioral of tp is
 	signal en: std_logic;
 	signal nq: std_logic;
 	signal s_red,s_grn,s_blu: std_logic;
+	
+	
+	component IBUFDS 
+		port(
+			I :  in std_logic; 
+			IB : in std_logic; 
+			O :  out std_logic
+		); 
+	end component; 
+
+	-- declaracion de los demas componentes
+   
+	signal Diff_Input: std_logic;
+	
 begin
+
+	--IBUFGDS_inst : IBUFGDS
+   --generic map (
+   --   DIFF_TERM => FALSE, -- Differential Termination 
+   --   IBUF_LOW_PWR => TRUE, -- Low power (TRUE) vs. performance (FALSE)
+   --   IOSTANDARD => "DEFAULT")
+   --port map (
+   --   O => an_in,  -- Clock buffer output
+   --   I => an_in,  -- Diff_p clock buffer input (connect directly to top-level port)
+   --   IB => nq -- Diff_n clock buffer input (connect directly to top-level port)
+   --);
+
 	ctrl_disp: entity work.disp_ctrl(Behavioral)
 		port map(clk=>clk, rst=>'0', anodos=>an, seg7=>seg7, bcd0=>bcd0, bcd1=>bcd1, bcd2=>bcd2, bcd3=>bcd3);
 		
