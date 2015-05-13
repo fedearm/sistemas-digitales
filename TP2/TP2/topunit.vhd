@@ -3,7 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity tp is
-	generic( IOSTANDARD : string := "LVDS_25");
 	port( clk:   in std_logic;
 	      rst:   in std_logic;
 			rst_sd:in std_logic;
@@ -18,6 +17,7 @@ entity tp is
 			grn_o: out std_logic_vector(2 downto 0);
 			blu_o: out std_logic_vector(1 downto 0)
 			);
+			
 end tp;
 
 architecture Behavioral of tp is

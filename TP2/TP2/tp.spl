@@ -1,0 +1,15 @@
+[Inputs]
+clk
+rst
+rst_sd
+an_in
+[Outputs]
+nq_out
+hs
+vs
+=an[3:0]=
+=seg7[7:0]=
+=red_o[2:0]=
+=grn_o[2:0]=
+=blu_o[1:0]=
+[BiDir]

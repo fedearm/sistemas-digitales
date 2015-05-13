@@ -10,6 +10,7 @@ entity Char_ROM is
 		W: integer:= 8
 	);
 	port(
+		clk: in std_logic;
 		char_address: in std_logic_vector(5 downto 0);
 		font_row, font_col: in std_logic_vector(M-1 downto 0);
 		rom_out: out std_logic
@@ -80,7 +81,7 @@ architecture p of Char_ROM is
 								"00111110",
 								"00100000",
 								"00111100",
-								"00001010",
+								"00000010",
 								"00100010",
 								"00011100",
 								"00000000"
@@ -88,7 +89,7 @@ architecture p of Char_ROM is
 
 	constant n_6: char:= (
 								"00000000",
-								"00001110",
+								"00001100",
 								"00010000",
 								"00100000",
 								"00111100",
@@ -148,9 +149,9 @@ architecture p of Char_ROM is
 								"00000000",
 								"00000000",
 								"00000000",
-								"00011000",
-								"00011000",
-								"00000000"
+								"00001100",
+								"00001100",
+								"00000100"
 						);
 	
 	constant l_V: char:= (
@@ -187,7 +188,12 @@ architecture p of Char_ROM is
 	
 begin
 
-	char_addr_aux <= char_address & font_row;
-	rom_out <= RAM(conv_integer(char_addr_aux))(conv_integer(font_col));
+	process (clk) is
+   begin
+      if rising_edge(clk) then  
+			char_addr_aux <= char_address & font_row;
+			rom_out <= RAM(conv_integer(char_addr_aux))(conv_integer(font_col));
+      end if;
+   end process;
 
 end;
