@@ -55,7 +55,8 @@ architecture vga_ctrl_arq of vga_ctrl is
 		
 	constant dir_h_max_ref: unsigned(9 downto 0) := "0000000101";   -- Valor de ref maximo	
 	constant dir_v_max_ref: unsigned(9 downto 0) := "0100011111";
-	
+	constant dir_v_min_ref: unsigned(9 downto 0) := "0111001100";
+
 	constant char_dir_dot: std_logic_vector(5 downto 0) := "001011"; --direccion del char rom '.'
 	constant char_dir_V:   std_logic_vector(5 downto 0) := "001100"; --direccion del char rom 'V'
 	
@@ -82,31 +83,23 @@ architecture vga_ctrl_arq of vga_ctrl is
 	signal valor_medido:  unsigned(8 downto 0) := ( others => '0' );
 
 	--type ram_type is array (0 to (2**7)-1) of std_logic_vector(8 downto 0);
-   --signal ram : ram_type;
-	--signal grabar_valor: std_logic;
-	--signal addr_ram: unsigned(7 downto 0) := (others => '0' );
+   signal ram_addr,ram_addr_lectura : std_logic_vector(7 downto 0) := (others=>'0');
+	signal grabar_valor, we: std_logic;
+	signal valor_ram, valor_ram_in: std_logic_vector(10 downto 0) := ( others => '0' );
 
 	begin
 	
-		 --generator_unit: entity work.generador(Beh)
-			--generic map(N=>1000000)
-			--port map(clock=>mclk, over=>grabar_valor);
+		 generator_unit: entity work.generador(Beh)
+			generic map(N=>1000000)
+			port map(clock=>mclk, over=>grabar_valor);
 
-
+		 ram_unit: entity work.ram_array(Beh)
+			port map(clk=>mclk, address=>ram_addr, we=>we,
+				data_i=>valor_ram_in,data_o=>valor_ram );
+			
 		 char_rom_unit: entity work.Char_ROM(p)
-		 port map ( char_address=>char_address, font_row=>row_char,
+			port map ( char_address=>char_address, font_row=>row_char,
 					   font_col=>col_char, rom_out=>rom_out, clk=>mclk );
-
-		 --process(grabar_valor)
-		 ---begin
-			--  if rising_edge(grabar_valor) then
-					--ram(to_integer(unsigned(addr_ram))) <= std_logic_vector(valor(8 downto 0));
-					--ram(to_integer(unsigned(addr_ram))) <= std_logic_vector('0' & addr_ram);
-					--addr_ram <= addr_ram + 1;
-					
-		--	  end if;
-		 --end process;																			
-
 
 		 -- División de la frecuencia del reloj
 		 process(mclk)
@@ -154,9 +147,20 @@ architecture vga_ctrl_arq of vga_ctrl is
 		-- Habilitación de la salida de datos por el display cuando se encuentra entre los porches
 		 vidon <= '1' when (((hc < hfp) and (hc > hbp)) and ((vc < vfp) and (vc > vbp))) else '0';
 
-		valor <= unsigned(ceros_overflow & bcd1) + 
-					unsigned(ceros_overflow & bcd2)*10 +
-					unsigned(ceros_overflow & bcd3)*100;
+		 valor <= unsigned(ceros_overflow & bcd1) + 
+		          unsigned(ceros_overflow & bcd2)*10 +
+					 unsigned(ceros_overflow & bcd3)*100;
+
+		we <= '1' when hc=0 and vc=0 else '0';
+		ram_addr_lectura <= std_logic_vector(pix_h-51);
+					
+		process(we)
+		begin
+			if rising_edge(we) then
+				valor_ram_in <= std_logic_vector(460 - unsigned(valor)/2 );
+				ram_addr <= ram_addr + 1;
+			end if;
+		end process;																			
 
 		process(hc,vc,vidon,valor,bcd3,bcd2,bcd1,bcd0,rom_out)
 		begin
@@ -187,7 +191,7 @@ architecture vga_ctrl_arq of vga_ctrl is
 		       pixel_row <= std_logic_vector(pix_v);
 
 			
-				if pix_h>dir_h_valor and pix_h<(dir_h_valor+8*4*5+1) and 
+				if pix_h>dir_h_valor and pix_h<(dir_h_valor+8*4*6+1) and 
 				   pix_v>dir_v_valor and pix_v<(dir_v_valor+8*4) then
 				
 					col_char <= std_logic_vector(pix_h(4 downto 2));
@@ -205,6 +209,9 @@ architecture vga_ctrl_arq of vga_ctrl is
 					elsif pix_h < (dir_h_valor+8*4*4+1) then
 						char_address<="00" & bcd1;
 						hay_char <= '1';
+					elsif pix_h < (dir_h_valor+8*4*5+1) then
+						char_address<="00" & bcd0;
+						hay_char <= '1';
 					else
 						char_address <= char_dir_V;
 						hay_char <= '1';
@@ -219,13 +226,14 @@ architecture vga_ctrl_arq of vga_ctrl is
 				if pix_h = 50 and pix_v > 240 and pix_v < 460 then
 					hay_grid <= '1';
 				end if;		
-				if pix_h>45 and pix_h<60 and 
-					pix_v = (dir_v_max_ref+7) then
-					hay_grid <= '1';
+				if pix_h>45 and pix_h<60 then
+					if pix_v = (dir_v_max_ref+7) or pix_v = (dir_v_min_ref) then
+						hay_grid <= '1';
+					end if;
 				end if;		
 			
 			
-				if pix_h>dir_h_max_ref and pix_h<(dir_h_max_ref+8*5+1) and 
+				if pix_h>dir_h_max_ref and pix_h<(dir_h_max_ref+8*4+2) and 
 					pix_v>dir_v_max_ref and pix_v<(dir_v_max_ref+8) then
 				
 					col_char <= std_logic_vector(pix_h(2 downto 0));
@@ -240,20 +248,38 @@ architecture vga_ctrl_arq of vga_ctrl is
 					elsif pix_h < (dir_h_max_ref+8*3+1) then
 						char_address<="000011";
 						hay_char <= '1';
-					elsif pix_h < (dir_h_max_ref+8*4+1) then
+					else
+						char_address <= char_dir_V;
+						hay_char <= '1';
+					end if;
+				end if;
+
+				if pix_h>(dir_h_max_ref-1) and pix_h<(dir_h_max_ref+8*4+1) and 
+					pix_v>dir_v_min_ref and pix_v<(dir_v_min_ref+8) then
+				
+					col_char <= std_logic_vector(pix_h(2 downto 0));
+					row_char <= std_logic_vector(pix_v(2 downto 0));
+				
+					if pix_h < (dir_h_max_ref+8+1) then
+						char_address<= "000000";
+						hay_char <= '1';
+					elsif pix_h < (dir_h_max_ref+8*2+1) then
+						char_address <= char_dir_dot;
+						hay_char <= '1';
+					elsif pix_h < (dir_h_max_ref+8*3+1) then
 						char_address<="000000";
 						hay_char <= '1';
 					else
 						char_address <= char_dir_V;
 						hay_char <= '1';
 					end if;
-				end if;	
+				end if;				
 				
 				if pix_h > 50 and pix_h < 400 and pix_v > 240 and pix_v < 460 then
-					--valor_medido <= unsigned(ram(to_integer(pix_v-240)));
-					--grid_index <= (460 - unsigned(valor_medido)/2 ) ;
-					grid_index <= (460 - unsigned(valor)/2 ) ;
+					--grid_index <= (460 - unsigned(valor)/2 ) ;
 
+					grid_index <= unsigned(valor_ram);
+					
 					if  pix_v = grid_index then
 						hay_dot <= '1';
 					end if;

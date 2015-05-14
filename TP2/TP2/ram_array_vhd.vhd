@@ -1,38 +1,36 @@
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.all;
-use IEEE.Numeric_Std.all;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_ARITH.ALL; 
 
 entity ram_array is
-	generic ( N:integer:= 8; M:integer := 9 ); 
+	generic( W: integer:= 11 );
 	port (
-		clk   : in  std_logic;
-		we      : in  std_logic;
-		address : in  std_logic_vector(N-1 downto 0);
-		datain  : in  std_logic_vector(M-1 downto 0);
-		dataout : out std_logic_vector(M-1 downto 0)
-  );
-end entity ram_array;
+		clk : in std_logic;
+		address : in std_logic_vector(7 downto 0);
+		we : in std_logic;
+		data_i : in std_logic_vector(W-1 downto 0);
+		data_o : out std_logic_vector(W-1 downto 0)
+   );
+end ram_array;
 
 architecture Beh of ram_array is
 
-   type ram_type is array (0 to (2**N)-1) of std_logic_vector(M-1 downto 0);
-   signal ram : ram_type;
-   signal r_address : std_logic_vector(N-1 downto 0);
+--Declaration of type and signal of a 256 element RAM
+--with each element being 8 bit wide.
+type ram_t is array (0 to 255) of std_logic_vector(W-1 downto 0);
+signal ram : ram_t := (others => (others => '0'));
 
 begin
 
-  RamProc: process(clk) is
-
-  begin
-    if rising_edge(clk) then
-      if we = '1' then
-        ram(to_integer(unsigned(address))) <= datain;
-      end if;
-      r_address <= address;
-    end if;
-  end process RamProc;
-
-  dataout <= ram(to_integer(unsigned(r_address)));
-
-end architecture Beh;
+--process for read and write operation.
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			if(we='1') then
+				ram(to_integer(unsigned(address))) <= data_i;
+			end if;
+			data_o <= ram(to_integer(unsigned(address)));
+		end if; 
+	end process;
+end Beh;

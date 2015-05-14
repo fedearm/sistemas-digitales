@@ -17,7 +17,25 @@
 <msg type="warning" file="Pack" num="1543" delta="old" >The register <arg fmt="%s" index="1">sigma_unit/dff_unit/nq</arg> has the property IOB=TRUE, but was not packed into the input side of an I/O component. <arg fmt="%z" index="2">The register symbol &quot;sigma_unit/dff_unit/nq&quot; has no connections inside the I/O component.</arg>
 </msg>
 
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">vga_unit/we</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">rst_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA11</arg>&gt; on block:&lt;<arg fmt="%s" index="2">vga_unit/ram_unit/Mram_ram.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA12</arg>&gt; on block:&lt;<arg fmt="%s" index="2">vga_unit/ram_unit/Mram_ram.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA13</arg>&gt; on block:&lt;<arg fmt="%s" index="2">vga_unit/ram_unit/Mram_ram.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA14</arg>&gt; on block:&lt;<arg fmt="%s" index="2">vga_unit/ram_unit/Mram_ram.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="812" delta="old" >Dangling pin &lt;<arg fmt="%s" index="1">DOA15</arg>&gt; on block:&lt;<arg fmt="%s" index="2">vga_unit/ram_unit/Mram_ram.A</arg>&gt;:&lt;<arg fmt="%s" index="3">RAMB16_RAMB16A</arg>&gt;.
 </msg>
 
 </messages>

@@ -1,11 +1,24 @@
 Release 14.5 Drc P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed May 13 00:36:15 2015
+Wed May 13 23:06:11 2015
 
 drc -z tp.ncd tp.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net vga_unit/we is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal <rst_IBUF> is incomplete. The signal
    does not drive any load pins in the design.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<vga_unit/ram_unit/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<vga_unit/ram_unit/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<vga_unit/ram_unit/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<vga_unit/ram_unit/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<vga_unit/ram_unit/Mram_ram.A>:<RAMB16_RAMB16A>.
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

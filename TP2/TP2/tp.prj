@@ -1,5 +1,6 @@
 vhdl work "contador.vhd"
 vhdl work "register.vhd"
+vhdl work "ram_array_vhd.vhd"
 vhdl work "multiplexor.vhd"
 vhdl work "generador.vhd"
 vhdl work "dff.vhd"
