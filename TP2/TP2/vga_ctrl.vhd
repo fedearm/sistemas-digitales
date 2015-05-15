@@ -46,8 +46,8 @@ architecture vga_ctrl_arq of vga_ctrl is
 
 	-- Constantes para dibujo de la pantalla 
 	
-	constant dir_v_valor:   unsigned(9 downto 0) := "0001000000"; -- Posicion de caracteres vertical
-	constant dir_h_valor:   unsigned(9 downto 0) := "0001000000"; -- Posicion de caracteres vertical
+	constant dir_v_valor:   unsigned(9 downto 0) := "0010000000"; -- Posicion de caracteres vertical
+	constant dir_h_valor:   unsigned(9 downto 0) := "0001111111"; -- Posicion de caracteres vertical
 
 	constant dir_h_r_g_max: unsigned(3 downto 0) := "0011"; -- Posicion de referencia de la grid
 	constant dir_v_r_g_max: unsigned(6 downto 0) := "0100110";   -- Posicion de referencia de la grid
@@ -55,10 +55,15 @@ architecture vga_ctrl_arq of vga_ctrl is
 		
 	constant dir_h_max_ref: unsigned(9 downto 0) := "0000000101";   -- Valor de ref maximo	
 	constant dir_v_max_ref: unsigned(9 downto 0) := "0100011111";
-	constant dir_v_min_ref: unsigned(9 downto 0) := "0111001100";
+	constant dir_v_min_ref: unsigned(9 downto 0) := "0111010000";
 
 	constant char_dir_dot: std_logic_vector(5 downto 0) := "001011"; --direccion del char rom '.'
 	constant char_dir_V:   std_logic_vector(5 downto 0) := "001100"; --direccion del char rom 'V'
+	
+	constant max_grid_h: unsigned(9 downto 0) := to_unsigned(400,10);
+	constant min_grid_h: unsigned(9 downto 0) := to_unsigned(50,10);
+	constant max_grid_v: unsigned(9 downto 0) := to_unsigned(460,10);
+	constant min_grid_v: unsigned(9 downto 0) := to_unsigned(240,10);
 	
 	constant ceros_overflow: std_logic_vector(6 downto 0) := "0000000";
 	
@@ -83,14 +88,15 @@ architecture vga_ctrl_arq of vga_ctrl is
 	signal valor_medido:  unsigned(8 downto 0) := ( others => '0' );
 
 	--type ram_type is array (0 to (2**7)-1) of std_logic_vector(8 downto 0);
-   signal ram_addr,ram_addr_lectura : std_logic_vector(7 downto 0) := (others=>'0');
+   signal ram_addr,ram_addr_r,ram_addr_w : std_logic_vector(8 downto 0) := (others=>'0');
+	signal ram_add_r_aux : std_logic_vector(9 downto 0) := (others=>'0');
 	signal grabar_valor, we: std_logic;
 	signal valor_ram, valor_ram_in: std_logic_vector(10 downto 0) := ( others => '0' );
 
 	begin
 	
 		 generator_unit: entity work.generador(Beh)
-			generic map(N=>1000000)
+			generic map(N=>2000000)
 			port map(clock=>mclk, over=>grabar_valor);
 
 		 ram_unit: entity work.ram_array(Beh)
@@ -151,32 +157,39 @@ architecture vga_ctrl_arq of vga_ctrl is
 		          unsigned(ceros_overflow & bcd2)*10 +
 					 unsigned(ceros_overflow & bcd3)*100;
 
-		we <= '1' when hc=0 and vc=0 else '0';
-		ram_addr_lectura <= std_logic_vector(pix_h-51);
-					
-		process(we)
+	   we <= grabar_valor;
+		
+		ram_addr <= ram_addr_w when we='1' else ram_addr_r;		
+		valor_ram_in <= '0' & std_logic_vector(max_grid_v - unsigned(valor)/2 );
+      ram_add_r_aux <= std_logic_vector(pix_h-min_grid_h-1);					
+		ram_addr_r <= ram_add_r_aux(8 downto 0);
+		
+		process(grabar_valor)
 		begin
-			if rising_edge(we) then
-				valor_ram_in <= std_logic_vector(460 - unsigned(valor)/2 );
-				ram_addr <= ram_addr + 1;
+			if rising_edge(grabar_valor) then
+					ram_addr_w <= ram_addr_w + 1;
+					if unsigned(ram_addr_w) > (max_grid_h-min_grid_h) then
+						ram_addr_w <= (others => '0');
+					end if;
 			end if;
 		end process;																			
 
-		process(hc,vc,vidon,valor,bcd3,bcd2,bcd1,bcd0,rom_out)
+		process(hc,vc,vidon,valor,bcd3,bcd2,bcd1,bcd0,rom_out,valor_ram)
 		begin
 			
 			pixel_col <= (others => '0');
 			pixel_row <= (others => '0');
-			char_address <= (others => '0');
-			grid_index <= (others => '0');
 			pix_h <= (others => '0');
 			pix_v <= (others => '0');
 			col_char <= (others => '0');
 			row_char <= (others => '0');
-			--red_o <= (others => '0');
-			red_o <= "011";
-			grn_o <= (others => '0');
+			char_address <= (others => '0');
+			grid_index <= (others => '0');
+			
+			red_o <= (others => '0');
 			blu_o <= (others => '0');
+			grn_o <= (others => '0');
+						
 			hay_char <= '0';
 			hay_grid <= '0';
 			hay_dot  <= '0';
@@ -220,64 +233,64 @@ architecture vga_ctrl_arq of vga_ctrl is
 			
 		
 			   -- Grilla
-				if pix_h > 50 and pix_h < 400 and pix_v = 460 then
+				if pix_h > min_grid_h and pix_h < max_grid_h and pix_v = max_grid_v then
 					hay_grid <= '1';
 				end if;		
-				if pix_h = 50 and pix_v > 240 and pix_v < 460 then
+				if pix_h = min_grid_h and pix_v > min_grid_v and pix_v < max_grid_v then
 					hay_grid <= '1';
 				end if;		
-				if pix_h>45 and pix_h<60 then
-					if pix_v = (dir_v_max_ref+7) or pix_v = (dir_v_min_ref) then
+				if pix_h>(min_grid_h-5) and pix_h<(min_grid_h+10) then
+					if pix_v = (dir_v_max_ref+7) or pix_v = (dir_v_min_ref-4) then
 						hay_grid <= '1';
 					end if;
 				end if;		
 			
 			
-				if pix_h>dir_h_max_ref and pix_h<(dir_h_max_ref+8*4+2) and 
-					pix_v>dir_v_max_ref and pix_v<(dir_v_max_ref+8) then
-				
+				if pix_h>dir_h_max_ref and pix_h<(dir_h_max_ref+8*4+2) then
+
 					col_char <= std_logic_vector(pix_h(2 downto 0));
 					row_char <= std_logic_vector(pix_v(2 downto 0));
 				
-					if pix_h < (dir_h_max_ref+8+1) then
-						char_address<= "000011";
-						hay_char <= '1';
-					elsif pix_h < (dir_h_max_ref+8*2+1) then
-						char_address <= char_dir_dot;
-						hay_char <= '1';
-					elsif pix_h < (dir_h_max_ref+8*3+1) then
-						char_address<="000011";
-						hay_char <= '1';
-					else
-						char_address <= char_dir_V;
-						hay_char <= '1';
+
+					if pix_v>dir_v_max_ref and pix_v<(dir_v_max_ref+8) then
+				
+						if pix_h < (dir_h_max_ref+8+1) then
+							char_address<= "000011";
+							hay_char <= '1';
+						elsif pix_h < (dir_h_max_ref+8*2+1) then
+							char_address <= char_dir_dot;
+							hay_char <= '1';
+						elsif pix_h < (dir_h_max_ref+8*3+1) then
+							char_address<="000011";
+							hay_char <= '1';
+						else
+							char_address <= char_dir_V;
+							hay_char <= '1';
+						end if;
 					end if;
+
+					if pix_v>dir_v_min_ref and pix_v<(dir_v_min_ref+8) then
+				
+						if pix_h < (dir_h_max_ref+8+1) then
+							char_address<= "000000";
+							hay_char <= '1';
+						elsif pix_h < (dir_h_max_ref+8*2+1) then
+							char_address <= char_dir_dot;
+							hay_char <= '1';
+						elsif pix_h < (dir_h_max_ref+8*3+1) then
+							char_address<="000000";
+							hay_char <= '1';
+						else
+							char_address <= char_dir_V;
+							hay_char <= '1';
+						end if;
+					end if;				
 				end if;
-
-				if pix_h>(dir_h_max_ref-1) and pix_h<(dir_h_max_ref+8*4+1) and 
-					pix_v>dir_v_min_ref and pix_v<(dir_v_min_ref+8) then
 				
-					col_char <= std_logic_vector(pix_h(2 downto 0));
-					row_char <= std_logic_vector(pix_v(2 downto 0));
 				
-					if pix_h < (dir_h_max_ref+8+1) then
-						char_address<= "000000";
-						hay_char <= '1';
-					elsif pix_h < (dir_h_max_ref+8*2+1) then
-						char_address <= char_dir_dot;
-						hay_char <= '1';
-					elsif pix_h < (dir_h_max_ref+8*3+1) then
-						char_address<="000000";
-						hay_char <= '1';
-					else
-						char_address <= char_dir_V;
-						hay_char <= '1';
-					end if;
-				end if;				
+				if pix_h > min_grid_h and pix_h < max_grid_h and 
+					pix_v > min_grid_v and pix_v < max_grid_v then
 				
-				if pix_h > 50 and pix_h < 400 and pix_v > 240 and pix_v < 460 then
-					--grid_index <= (460 - unsigned(valor)/2 ) ;
-
 					grid_index <= unsigned(valor_ram);
 					
 					if  pix_v = grid_index then
