@@ -1,9 +1,9 @@
 # Nexys 2
 NET "clk" LOC = "B8";
 NET "rst" LOC = "G18";
-NET "rst_sd" LOC = "B18";
 NET "an_in" LOC = "M15" | DIFF_TERM = TRUE;
 NET "nq_out" LOC = "L17" | DIFF_TERM = TRUE;
+NET "mode" LOC = "R17";
 
 NET "an<0>" LOC = "F17";
 NET "an<1>" LOC = "H17";

@@ -44,8 +44,8 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-an_in       |    2.085(R)|    1.135(R)|clk_BUFGP         |   0.000|
-rst_sd      |    2.093(R)|    0.099(R)|clk_BUFGP         |   0.000|
+an_in       |    1.241(R)|    1.140(R)|clk_BUFGP         |   0.000|
+rst         |    1.884(R)|   -0.070(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,28 +53,28 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-an<0>       |    9.108(R)|clk_BUFGP         |   0.000|
-an<1>       |    9.908(R)|clk_BUFGP         |   0.000|
-an<2>       |    8.737(R)|clk_BUFGP         |   0.000|
-an<3>       |    8.981(R)|clk_BUFGP         |   0.000|
-blu_o<0>    |   26.614(R)|clk_BUFGP         |   0.000|
-blu_o<1>    |   26.889(R)|clk_BUFGP         |   0.000|
-grn_o<0>    |   26.494(R)|clk_BUFGP         |   0.000|
-grn_o<1>    |   27.061(R)|clk_BUFGP         |   0.000|
-grn_o<2>    |   27.053(R)|clk_BUFGP         |   0.000|
-hs          |   12.344(R)|clk_BUFGP         |   0.000|
+an<0>       |   10.153(R)|clk_BUFGP         |   0.000|
+an<1>       |    9.374(R)|clk_BUFGP         |   0.000|
+an<2>       |   11.142(R)|clk_BUFGP         |   0.000|
+an<3>       |   10.273(R)|clk_BUFGP         |   0.000|
+blu_o<0>    |   30.630(R)|clk_BUFGP         |   0.000|
+blu_o<1>    |   30.662(R)|clk_BUFGP         |   0.000|
+grn_o<0>    |   30.262(R)|clk_BUFGP         |   0.000|
+grn_o<1>    |   30.262(R)|clk_BUFGP         |   0.000|
+grn_o<2>    |   31.110(R)|clk_BUFGP         |   0.000|
+hs          |   12.445(R)|clk_BUFGP         |   0.000|
 nq_out      |    6.156(R)|clk_BUFGP         |   0.000|
-red_o<0>    |   25.906(R)|clk_BUFGP         |   0.000|
-red_o<1>    |   26.575(R)|clk_BUFGP         |   0.000|
-red_o<2>    |   26.864(R)|clk_BUFGP         |   0.000|
-seg7<0>     |   12.794(R)|clk_BUFGP         |   0.000|
-seg7<1>     |   13.477(R)|clk_BUFGP         |   0.000|
-seg7<2>     |   14.255(R)|clk_BUFGP         |   0.000|
-seg7<3>     |   13.771(R)|clk_BUFGP         |   0.000|
-seg7<4>     |   14.522(R)|clk_BUFGP         |   0.000|
-seg7<5>     |   14.494(R)|clk_BUFGP         |   0.000|
-seg7<6>     |   13.984(R)|clk_BUFGP         |   0.000|
-vs          |   11.098(R)|clk_BUFGP         |   0.000|
+red_o<0>    |   31.891(R)|clk_BUFGP         |   0.000|
+red_o<1>    |   31.213(R)|clk_BUFGP         |   0.000|
+red_o<2>    |   31.484(R)|clk_BUFGP         |   0.000|
+seg7<0>     |   13.877(R)|clk_BUFGP         |   0.000|
+seg7<1>     |   13.282(R)|clk_BUFGP         |   0.000|
+seg7<2>     |   13.429(R)|clk_BUFGP         |   0.000|
+seg7<3>     |   13.752(R)|clk_BUFGP         |   0.000|
+seg7<4>     |   14.197(R)|clk_BUFGP         |   0.000|
+seg7<5>     |   13.127(R)|clk_BUFGP         |   0.000|
+seg7<6>     |   14.323(R)|clk_BUFGP         |   0.000|
+vs          |   11.534(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -82,18 +82,32 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.316|         |         |         |
+clk            |   12.445|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+mode           |blu_o<0>       |   11.340|
+mode           |blu_o<1>       |   11.372|
+mode           |grn_o<0>       |   10.972|
+mode           |grn_o<1>       |   10.972|
+mode           |grn_o<2>       |   11.820|
+mode           |red_o<0>       |   12.601|
+mode           |red_o<1>       |   11.923|
+mode           |red_o<2>       |   12.194|
+---------------+---------------+---------+
 
-Analysis completed Thu May 14 23:29:13 2015 
+
+Analysis completed Sat May 16 20:19:22 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 169 MB
+Peak Memory Usage: 173 MB
 
 
 

@@ -1,51 +1,22 @@
---------------------------------------------------------------------------
--- Modulo: Controlador VGA
--- Descripción: 
--- Autor: Sistemas Digitales (66.17)
---        Universidad de Buenos Aires - Facultad de Ingeniería
---        www.campus.fi.uba.ar
--- Fecha: 16/04/13
---------------------------------------------------------------------------
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
---use IEEE.STD_LOGIC_ARITH.ALL; 
+use IEEE.STD_LOGIC_ARITH.ALL; 
 
-entity vga_ctrl is
+entity grid_vga is
     port (
 		mclk: in std_logic;
-		bcd0, bcd1, bcd2, bcd3: in std_logic_vector(3 downto 0);
-		mode: in std_logic;
-		
-		hs: out std_logic;
-		vs: out std_logic;
+		pixel_row: in std_logic_vector(9 downto 0);
+		pixel_col: in std_logic_vector(9 downto 0)
+
 		red_o: out std_logic_vector(2 downto 0);
 		grn_o: out std_logic_vector(2 downto 0);
 		blu_o: out std_logic_vector(1 downto 0);
-		pixel_row: out std_logic_vector(9 downto 0);
-		pixel_col: out std_logic_vector(9 downto 0)
 	
 	);
-end vga_ctrl;
+end grid_vga;
 
-architecture vga_ctrl_arq of vga_ctrl is
-
-	-- Numero de pixeles en una linea horizontal (800)
-	constant hpixels: unsigned(9 downto 0) := "1100100000";
-	-- Numero de lineas horizontales en el display (521)
-	constant vlines: unsigned(9 downto 0) := "1000001001";
-	
-	constant hbp: unsigned(9 downto 0) := "0010010000";	 -- Back porch horizontal (144)
-	constant hfp: unsigned(9 downto 0) := "1100010000";	 -- Front porch horizontal (784)
-	constant vbp: unsigned(9 downto 0) := "0000011111";	 -- Back porch vertical (31)
-	constant vfp: unsigned(9 downto 0) := "0111111111";	 -- Front porch vertical (511)
-
-
-	-- Constantes para dibujo de la pantalla 
-	
-	constant dir_v_valor:   unsigned(9 downto 0) := "0010000000"; -- Posicion de caracteres vertical
-	constant dir_h_valor:   unsigned(9 downto 0) := "0001111111"; -- Posicion de caracteres vertical
+architecture Beh of grid_vga is
 
 	constant dir_h_r_g_max: unsigned(3 downto 0) := "0011"; -- Posicion de referencia de la grid
 	constant dir_v_r_g_max: unsigned(6 downto 0) := "0100110";   -- Posicion de referencia de la grid
@@ -66,116 +37,27 @@ architecture vga_ctrl_arq of vga_ctrl is
 	constant ceros_overflow: std_logic_vector(6 downto 0) := "0000000";
 	
 	-- Contadores (horizontal y vertical)
-	signal hc, vc, pix_h, pix_v: unsigned(9 downto 0);
+	signal pix_h, pix_v: unsigned(9 downto 0);
 	-- Flag para obtener una habilitación cada dos ciclos de clock
-	signal clkdiv_flag: std_logic;
 	-- Senal para habilitar la visualización de datos
 	signal vidon: std_logic;
-	-- Senal para habilitar el contador vertical
-	signal vsenable: std_logic;
 	
 	signal char_address: std_logic_vector(5 downto 0);
 	signal col_char, row_char: std_logic_vector(2 downto 0);
 	signal rom_out: std_logic;
 		
-	signal hay_char, hay_grid, hay_dot, hay_ref: std_logic;
+	signal hay_char, hay_grid, hay_ref: std_logic;
 	signal grid_index: unsigned(10 downto 0) := ( others => '0' );
 	signal grid_h: unsigned(8 downto 0) := ( others => '0' );
 	signal grid_v: unsigned(8 downto 0) := ( others => '0' );
-	--signal valor:  unsigned(10 downto 0) := ( others => '0' );
-	signal valor:  unsigned(21 downto 0) := ( others => '0' );
-	signal valor_medido:  unsigned(8 downto 0) := ( others => '0' );
-
-   signal ram_addr,ram_addr_r,ram_addr_w : std_logic_vector(8 downto 0) := (others=>'0');
-	signal ram_add_r_aux : std_logic_vector(9 downto 0) := (others=>'0');
-	signal grabar_valor, we: std_logic;
-	signal valor_ram : std_logic_vector(10 downto 0) := ( others => '0' );
-	--signal valor_ram_in: std_logic_vector(10 downto 0) := ( others => '0' );
-	signal valor_ram_in: std_logic_vector(21 downto 0) := ( others => '0' );
 
 	begin
 	
-		 generator_unit: entity work.generador(Beh)
-			generic map(N=>2000000)
-			port map(clock=>mclk, over=>grabar_valor);
-
-		 ram_unit: entity work.ram_array(Beh)
-			port map(clk=>mclk, address=>ram_addr, we=>we,
-				data_i=>valor_ram_in(10 downto 0),data_o=>valor_ram );
-			
 		 char_rom_unit: entity work.Char_ROM(p)
 			port map ( char_address=>char_address, font_row=>row_char,
 					   font_col=>col_char, rom_out=>rom_out, clk=>mclk );
 
-		 -- División de la frecuencia del reloj
-		 process(mclk)
-		 begin
-			  if rising_edge(mclk) then
-					clkdiv_flag <= not clkdiv_flag;
-			  end if;
-		 end process;																			
-
-		 -- Contador horizontal
-		 process(mclk)
-		 begin
-			  if rising_edge(mclk) then
-					if clkdiv_flag = '1' then
-						 if hc = hpixels then														
-							  hc <= (others => '0');	-- El cont horiz se resetea cuando alcanza la cuenta máxima de pixeles
-							  vsenable <= '1';		-- Habilitación del cont vert
-						 else
-							  hc <= hc + 1;			-- Incremento del cont horiz
-							  vsenable <= '0';		-- El cont vert se mantiene deshabilitado
-						 end if;
-					end if;
-			  end if;
-		 end process;
-
-		 -- Contador vertical
-		 process(mclk)
-		 begin
-			  if rising_edge(mclk) then			 
-					if clkdiv_flag = '1' then           -- Flag que habilita la operación una vez cada dos ciclos (25 MHz)
-						 if vsenable = '1' then          -- Cuando el cont horiz llega al máximo de su cuenta habilita al cont vert
-							  if vc = vlines then															 
-									vc <= (others => '0');  -- El cont vert se resetea cuando alcanza la cantidad maxima de lineas
-							  else
-									vc <= vc + 1;           -- Incremento del cont vert
-							  end if;
-						 end if;
-					end if;
-			  end if;
-		 end process;
-
-		 hs <= '1' when (hc < "0001100001") else '0';   -- Generación de la señal de sincronismo horizontal
-		 vs <= '1' when (vc < "0000000011") else '0';   -- Generación de la señal de sincronismo vertical
-
-		-- Habilitación de la salida de datos por el display cuando se encuentra entre los porches
-		 vidon <= '1' when (((hc < hfp) and (hc > hbp)) and ((vc < vfp) and (vc > vbp))) else '0';
-
-		 valor <= unsigned(ceros_overflow & bcd1) + 
-		          unsigned(ceros_overflow & bcd2)*10 +
-			  unsigned(ceros_overflow & bcd3)*100;
-
-	   we <= grabar_valor;
-		
-		ram_addr <= ram_addr_w when we='1' else ram_addr_r;		
-		--valor_ram_in <= '0' & std_logic_vector(max_grid_v - unsigned(valor)/2 );
-		valor_ram_in <= std_logic_vector(max_grid_v - unsigned(valor)/2 );
-	        ram_add_r_aux <= std_logic_vector(pix_h-min_grid_h-1);					
-		ram_addr_r <= ram_add_r_aux(8 downto 0);
-		
-		process(grabar_valor)
-		begin
-			if rising_edge(grabar_valor) then
-					ram_addr_w <= ram_addr_w + 1;
-					if unsigned(ram_addr_w) > (max_grid_h-min_grid_h) then
-						ram_addr_w <= (others => '0');
-					end if;
-			end if;
-		end process;																			
-
-		process(hc,vc,vidon,valor,bcd3,bcd2,bcd1,bcd0,rom_out,valor_ram)
+		process(vidon,valor,bcd3,bcd2,bcd1,bcd0,rom_out,valor_ram)
 		begin
 			
 			pixel_col <= (others => '0');
@@ -293,15 +175,9 @@ architecture vga_ctrl_arq of vga_ctrl is
 					pix_v > min_grid_v and pix_v < max_grid_v then
 				
 					grid_index <= unsigned(valor_ram);
-			
-					if mode = '1' then
-						if  pix_v >= grid_index then
-							hay_dot <= '1';
-						end if;
-					else
-						if  pix_v = grid_index then
-							hay_dot <= '1';
-						end if;
+					
+					if  pix_v = grid_index then
+						hay_dot <= '1';
 					end if;
 				end if;
 

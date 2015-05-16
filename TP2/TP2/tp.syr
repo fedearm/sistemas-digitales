@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: tp.prj
@@ -132,7 +132,8 @@ Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-d
 Entity <vga_ctrl> compiled.
 Entity <vga_ctrl> (Architecture <vga_ctrl_arq>) compiled.
 Compiling vhdl file "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" in Library work.
-Architecture behavioral of Entity tp is up to date.
+Entity <tp> compiled.
+Entity <tp> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -184,8 +185,8 @@ Analyzing hierarchy for entity <counter> in library <work> (architecture <Behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <tp> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 62: Unconnected output port 'pixel_row' of component 'vga_ctrl'.
-WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 62: Unconnected output port 'pixel_col' of component 'vga_ctrl'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 37: Unconnected output port 'pixel_row' of component 'vga_ctrl'.
+WARNING:Xst:753 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd" line 37: Unconnected output port 'pixel_col' of component 'vga_ctrl'.
 Entity <tp> analyzed. Unit <tp> generated.
 
 Analyzing Entity <disp_ctrl> in library <work> (Architecture <Behavioral>).
@@ -230,8 +231,8 @@ Analyzing generic Entity <reg4> in library <work> (Architecture <Behavioral>).
 Entity <reg4> analyzed. Unit <reg4> generated.
 
 Analyzing Entity <vga_ctrl> in library <work> (Architecture <vga_ctrl_arq>).
-WARNING:Xst:1610 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 156: Width mismatch. <valor> has a width of 11 bits but assigned expression is 22-bit wide.
-WARNING:Xst:1610 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 163: Width mismatch. <valor_ram_in> has a width of 11 bits but assigned expression is 12-bit wide.
+WARNING:Xst:819 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 178: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mode>
 Entity <vga_ctrl> analyzed. Unit <vga_ctrl> generated.
 
 Analyzing generic Entity <generador.2> in library <work> (Architecture <Beh>).
@@ -372,55 +373,52 @@ Unit <disp_ctrl> synthesized.
 
 Synthesizing Unit <vga_ctrl>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd".
-WARNING:Xst:647 - Input <blu_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <red_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <grn_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <valor_ram_in<21:11>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <valor_medido> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <valor<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ram_add_r_aux<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <grid_v> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <grid_h> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:643 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 156: The result of a 11x11-bit multiplication is partially used. Only the 11 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-WARNING:Xst:643 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd" line 156: The result of a 11x11-bit multiplication is partially used. Only the 11 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
-    Found 10-bit comparator greater for signal <char_address$cmp_gt0000> created at line 207.
-    Found 10-bit comparator greater for signal <char_address$cmp_gt0001> created at line 207.
-    Found 10-bit comparator greater for signal <char_address$cmp_gt0002> created at line 249.
-    Found 10-bit comparator greater for signal <char_address$cmp_gt0003> created at line 272.
-    Found 10-bit comparator greater for signal <char_address$cmp_gt0004> created at line 255.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0000> created at line 207.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0001> created at line 207.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0002> created at line 213.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0003> created at line 215.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0004> created at line 218.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0005> created at line 221.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0006> created at line 224.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0007> created at line 249.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0008> created at line 272.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0009> created at line 274.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0010> created at line 276.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0011> created at line 279.
-    Found 10-bit comparator less for signal <char_address$cmp_lt0012> created at line 255.
+    Found 10-bit comparator greater for signal <char_address$cmp_gt0000> created at line 208.
+    Found 10-bit comparator greater for signal <char_address$cmp_gt0001> created at line 208.
+    Found 10-bit comparator greater for signal <char_address$cmp_gt0002> created at line 250.
+    Found 10-bit comparator greater for signal <char_address$cmp_gt0003> created at line 273.
+    Found 10-bit comparator greater for signal <char_address$cmp_gt0004> created at line 256.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0000> created at line 208.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0001> created at line 208.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0002> created at line 214.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0003> created at line 216.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0004> created at line 219.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0005> created at line 222.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0006> created at line 225.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0007> created at line 250.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0008> created at line 273.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0009> created at line 275.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0010> created at line 277.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0011> created at line 280.
+    Found 10-bit comparator less for signal <char_address$cmp_lt0012> created at line 256.
     Found 1-bit register for signal <clkdiv_flag>.
-    Found 11-bit comparator equal for signal <hay_dot$cmp_eq0000> created at line 296.
-    Found 10-bit comparator greater for signal <hay_dot$cmp_gt0000> created at line 291.
-    Found 10-bit comparator greater for signal <hay_dot$cmp_gt0001> created at line 291.
-    Found 10-bit comparator less for signal <hay_dot$cmp_lt0000> created at line 291.
-    Found 10-bit comparator less for signal <hay_dot$cmp_lt0001> created at line 291.
-    Found 10-bit comparator greater for signal <hay_grid$cmp_gt0000> created at line 242.
-    Found 10-bit comparator less for signal <hay_grid$cmp_lt0000> created at line 242.
+    Found 11-bit comparator equal for signal <hay_dot$cmp_eq0000> created at line 302.
+    Found 11-bit comparator greatequal for signal <hay_dot$cmp_ge0000> created at line 298.
+    Found 10-bit comparator greater for signal <hay_dot$cmp_gt0000> created at line 292.
+    Found 10-bit comparator greater for signal <hay_dot$cmp_gt0001> created at line 292.
+    Found 10-bit comparator less for signal <hay_dot$cmp_lt0000> created at line 292.
+    Found 10-bit comparator less for signal <hay_dot$cmp_lt0001> created at line 292.
+    Found 10-bit comparator greater for signal <hay_grid$cmp_gt0000> created at line 243.
+    Found 10-bit comparator less for signal <hay_grid$cmp_lt0000> created at line 243.
     Found 10-bit up counter for signal <hc>.
     Found 10-bit comparator less for signal <hs$cmp_lt0000> created at line 150.
-    Found 10-bit subtractor for signal <pix_h$addsub0000> created at line 201.
-    Found 10-bit subtractor for signal <pix_v$addsub0000> created at line 202.
+    Found 10-bit subtractor for signal <pix_h$addsub0000> created at line 202.
+    Found 10-bit subtractor for signal <pix_v$addsub0000> created at line 203.
     Found 10-bit subtractor for signal <ram_add_r_aux>.
-    Found 10-bit subtractor for signal <ram_add_r_aux$addsub0000> created at line 164.
+    Found 10-bit subtractor for signal <ram_add_r_aux$addsub0000> created at line 165.
     Found 9-bit up counter for signal <ram_addr_w>.
-    Found 10-bit comparator greater for signal <ram_addr_w$cmp_gt0000> created at line 171.
-    Found 11-bit adder for signal <valor>.
-    Found 11-bit adder for signal <valor$addsub0000> created at line 156.
+    Found 10-bit comparator greater for signal <ram_addr_w$cmp_gt0000> created at line 172.
+    Found 22-bit adder for signal <valor>.
+    Found 22-bit adder for signal <valor$addsub0000> created at line 156.
     Found 11x11-bit multiplier for signal <valor$mult0000> created at line 156.
     Found 11x11-bit multiplier for signal <valor$mult0001> created at line 156.
-    Found 11-bit adder for signal <valor_ram_in$sub0000> created at line 163.
+    Found 22-bit adder for signal <valor_ram_in>.
     Found 10-bit up counter for signal <vc>.
     Found 10-bit comparator greater for signal <vidon$cmp_gt0000> created at line 154.
     Found 10-bit comparator greater for signal <vidon$cmp_gt0001> created at line 154.
@@ -433,7 +431,7 @@ WARNING:Xst:643 - "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-dig
 	inferred   2 D-type flip-flop(s).
 	inferred   7 Adder/Subtractor(s).
 	inferred   2 Multiplier(s).
-	inferred  32 Comparator(s).
+	inferred  33 Comparator(s).
 Unit <vga_ctrl> synthesized.
 
 
@@ -464,9 +462,7 @@ Unit <sigma> synthesized.
 
 Synthesizing Unit <tp>.
     Related source file is "C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd".
-WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <Diff_Input> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <tp> synthesized.
 
 
@@ -483,7 +479,7 @@ Macro Statistics
  11x11-bit multiplier                                  : 2
 # Adders/Subtractors                                   : 7
  10-bit subtractor                                     : 4
- 11-bit adder                                          : 3
+ 22-bit adder                                          : 3
 # Counters                                             : 20
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
@@ -496,10 +492,11 @@ Macro Statistics
  11-bit register                                       : 1
  4-bit register                                        : 4
  9-bit register                                        : 1
-# Comparators                                          : 46
+# Comparators                                          : 47
  10-bit comparator greater                             : 11
  10-bit comparator less                                : 20
  11-bit comparator equal                               : 1
+ 11-bit comparator greatequal                          : 1
  4-bit comparator equal                                : 14
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
@@ -566,7 +563,8 @@ Macro Statistics
  11x11-bit multiplier                                  : 2
 # Adders/Subtractors                                   : 6
  10-bit subtractor                                     : 2
- 11-bit adder                                          : 3
+ 11-bit adder                                          : 1
+ 12-bit adder                                          : 2
  9-bit subtractor borrow in                            : 1
 # Counters                                             : 20
  10-bit up counter                                     : 2
@@ -577,10 +575,11 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Registers                                            : 40
  Flip-Flops                                            : 40
-# Comparators                                          : 46
+# Comparators                                          : 47
  10-bit comparator greater                             : 11
  10-bit comparator less                                : 20
  11-bit comparator equal                               : 1
+ 11-bit comparator greatequal                          : 1
  4-bit comparator equal                                : 14
 # Multiplexers                                         : 2
  1-bit 8-to-1 multiplexer                              : 1
@@ -597,6 +596,8 @@ WARNING:Xst:2677 - Node <u_c6/over> of sequential type is unconnected in block <
 WARNING:Xst:2677 - Node <ctrl_disp/cont_2b_unit/over> of sequential type is unconnected in block <tp>.
 
 Optimizing unit <tp> ...
+
+Optimizing unit <vga_ctrl> ...
 
 Optimizing unit <cont_bcd> ...
 
@@ -642,25 +643,25 @@ Design Statistics
 # IOs                              : 27
 
 Cell Usage :
-# BELS                             : 700
+# BELS                             : 756
 #      GND                         : 1
-#      INV                         : 32
+#      INV                         : 33
 #      LUT1                        : 74
-#      LUT2                        : 36
-#      LUT2_D                      : 5
-#      LUT2_L                      : 4
-#      LUT3                        : 62
-#      LUT3_D                      : 4
-#      LUT3_L                      : 1
-#      LUT4                        : 204
-#      LUT4_D                      : 15
-#      LUT4_L                      : 15
-#      MULT_AND                    : 4
-#      MUXCY                       : 116
-#      MUXF5                       : 19
+#      LUT2                        : 58
+#      LUT2_D                      : 4
+#      LUT2_L                      : 2
+#      LUT3                        : 65
+#      LUT3_D                      : 6
+#      LUT3_L                      : 3
+#      LUT4                        : 199
+#      LUT4_D                      : 14
+#      LUT4_L                      : 14
+#      MULT_AND                    : 10
+#      MUXCY                       : 135
+#      MUXF5                       : 22
 #      MUXF6                       : 1
 #      VCC                         : 1
-#      XORCY                       : 106
+#      XORCY                       : 114
 # FlipFlops/Latches                : 161
 #      FD                          : 1
 #      FDC                         : 12
@@ -674,8 +675,8 @@ Cell Usage :
 #      RAMB16_S9                   : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 25
-#      IBUF                        : 2
+# IO Buffers                       : 26
+#      IBUF                        : 3
 #      OBUF                        : 23
 # MULTs                            : 1
 #      MULT18X18SIO                : 1
@@ -686,11 +687,11 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      241  out of   4656     5%  
+ Number of Slices:                      251  out of   4656     5%  
  Number of Slice Flip Flops:            160  out of   9312     1%  
- Number of 4 input LUTs:                452  out of   9312     4%  
+ Number of 4 input LUTs:                472  out of   9312     5%  
  Number of IOs:                          27
- Number of bonded IOBs:                  26  out of    232    11%  
+ Number of bonded IOBs:                  27  out of    232    11%  
     IOB Flip Flops:                       1
  Number of BRAMs:                         2  out of     20    10%  
  Number of MULT18X18SIOs:                 1  out of     20     5%  
@@ -718,7 +719,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)      | Load  |
 -----------------------------------+----------------------------+-------+
 clk                                | BUFGP                      | 154   |
-vga_unit/generator_unit/over       | NONE(vga_unit/ram_addr_w_0)| 9     |
+vga_unit/generator_unit/over       | NONE(vga_unit/ram_addr_w_8)| 9     |
 -----------------------------------+----------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -729,17 +730,17 @@ Control Signal                                                        | Buffer(F
 ----------------------------------------------------------------------+-------------------------------------------+-------+
 sigma_unit/cont_per_unit/reset(sigma_unit/cont_per_unit/reset97:O)    | NONE(sigma_unit/cont_per_unit/u_c0/over)  | 34    |
 sigma_unit/cont_sigma_unit/reset(sigma_unit/cont_sigma_unit/reset97:O)| NONE(sigma_unit/cont_sigma_unit/u_c0/over)| 34    |
-rst_sd                                                                | IBUF                                      | 16    |
+rst                                                                   | IBUF                                      | 16    |
 ----------------------------------------------------------------------+-------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 13.417ns (Maximum Frequency: 74.532MHz)
+   Minimum period: 13.427ns (Maximum Frequency: 74.477MHz)
    Minimum input arrival time before clock: 3.197ns
-   Maximum output required time after clock: 21.615ns
-   Maximum combinational path delay: No path found
+   Maximum output required time after clock: 23.523ns
+   Maximum combinational path delay: 7.577ns
 
 Timing Detail:
 --------------
@@ -747,10 +748,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.417ns (frequency: 74.532MHz)
-  Total number of paths / destination ports: 29006 / 328
+  Clock period: 13.427ns (frequency: 74.477MHz)
+  Total number of paths / destination ports: 26729 / 328
 -------------------------------------------------------------------------
-Delay:               13.417ns (Levels of Logic = 9)
+Delay:               13.427ns (Levels of Logic = 9)
   Source:            vga_unit/hc_1 (FF)
   Destination:       vga_unit/char_rom_unit/Mrom_rom_out_varindex0000 (RAM)
   Source Clock:      clk rising
@@ -760,20 +761,20 @@ Delay:               13.417ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             9   0.591   0.995  vga_unit/hc_1 (vga_unit/hc_1)
-     LUT4_D:I0->LO         1   0.704   0.104  vga_unit/vidon_cmp_gt00001 (N205)
-     LUT4:I3->O            1   0.704   0.424  vga_unit/vidon_and00005 (vga_unit/vidon_and00005)
-     LUT4_D:I3->O         11   0.704   0.968  vga_unit/vidon_and0000122_SW0 (N55)
-     LUT3_D:I2->O         11   0.704   0.968  vga_unit/pix_h<7> (vga_unit/pix_h<7>)
-     LUT3:I2->O            3   0.704   0.706  vga_unit/hay_grid_and000111 (N9)
-     LUT4:I0->O            2   0.704   0.482  vga_unit/char_address_cmp_lt00092 (vga_unit/char_address_cmp_lt0009)
-     LUT4:I2->O            4   0.704   0.622  vga_unit/char_address<2>11 (N61)
-     LUT3:I2->O            1   0.704   0.424  vga_unit/char_address<2>78_SW0 (N135)
-     LUT4:I3->O            1   0.704   0.420  vga_unit/char_address<2>92 (vga_unit/char_address<2>)
-     RAMB16_S9:ADDR5           0.377          vga_unit/char_rom_unit/Mrom_rom_out_varindex0000
+     FDRE:C->Q            10   0.591   1.057  vga_unit/hc_1 (vga_unit/hc_1)
+     LUT4_D:I0->O          2   0.704   0.451  vga_unit/vidon_cmp_gt00001 (vga_unit/vidon_cmp_gt00001)
+     LUT4:I3->O           12   0.704   0.961  vga_unit/vidon_and00008 (vga_unit/vidon_and00008)
+     MUXF5:S->O            3   0.739   0.610  vga_unit/vidon_and0000122_SW1 (N143)
+     LUT3_D:I1->O         12   0.704   0.996  vga_unit/pixel_col<7> (vga_unit/pixel_col<7>)
+     LUT3:I2->O            3   0.704   0.610  vga_unit/char_address_cmp_lt00031 (vga_unit/char_address_cmp_lt0003)
+     LUT3:I1->O            1   0.704   0.424  vga_unit/char_address<3>9 (vga_unit/char_address<3>9)
+     LUT4:I3->O            1   0.704   0.455  vga_unit/char_address<3>77_SW0 (N109)
+     LUT4_L:I2->LO         1   0.704   0.104  vga_unit/char_address<3>77 (vga_unit/char_address<3>77)
+     LUT4:I3->O            1   0.704   0.420  vga_unit/char_address<3>91 (vga_unit/char_address<3>)
+     RAMB16_S9:ADDR6           0.377          vga_unit/char_rom_unit/Mrom_rom_out_varindex0000
     ----------------------------------------
-    Total                     13.417ns (7.304ns logic, 6.113ns route)
-                                       (54.4% logic, 45.6% route)
+    Total                     13.427ns (7.339ns logic, 6.088ns route)
+                                       (54.7% logic, 45.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'vga_unit/generator_unit/over'
@@ -781,16 +782,16 @@ Timing constraint: Default period analysis for Clock 'vga_unit/generator_unit/ov
   Total number of paths / destination ports: 153 / 18
 -------------------------------------------------------------------------
 Delay:               5.212ns (Levels of Logic = 3)
-  Source:            vga_unit/ram_addr_w_1 (FF)
-  Destination:       vga_unit/ram_addr_w_0 (FF)
+  Source:            vga_unit/ram_addr_w_3 (FF)
+  Destination:       vga_unit/ram_addr_w_8 (FF)
   Source Clock:      vga_unit/generator_unit/over rising
   Destination Clock: vga_unit/generator_unit/over rising
 
-  Data Path: vga_unit/ram_addr_w_1 to vga_unit/ram_addr_w_0
+  Data Path: vga_unit/ram_addr_w_3 to vga_unit/ram_addr_w_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.591   0.706  vga_unit/ram_addr_w_1 (vga_unit/ram_addr_w_1)
+     FDR:C->Q              3   0.591   0.706  vga_unit/ram_addr_w_3 (vga_unit/ram_addr_w_3)
      LUT4:I0->O            1   0.704   0.000  vga_unit/ram_addr_w_cmp_gt0000261 (vga_unit/ram_addr_w_cmp_gt0000261)
      MUXF5:I1->O           1   0.321   0.420  vga_unit/ram_addr_w_cmp_gt000026_f5 (vga_unit/ram_addr_w_cmp_gt000026)
      MUXF5:S->O            9   0.739   0.820  vga_unit/ram_addr_w_cmp_gt0000226_f5 (vga_unit/ram_addr_w_cmp_gt0000)
@@ -804,15 +805,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              3.197ns (Levels of Logic = 1)
-  Source:            rst_sd (PAD)
+  Source:            rst (PAD)
   Destination:       sigma_unit/dff_unit/nq (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_sd to sigma_unit/dff_unit/nq
+  Data Path: rst to sigma_unit/dff_unit/nq
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            18   1.218   1.068  rst_sd_IBUF (rst_sd_IBUF)
+     IBUF:I->O            18   1.218   1.068  rst_IBUF (rst_IBUF)
      FDS:S                     0.911          sigma_unit/dff_unit/nq
     ----------------------------------------
     Total                      3.197ns (2.129ns logic, 1.068ns route)
@@ -820,52 +821,74 @@ Offset:              3.197ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 139577 / 22
+  Total number of paths / destination ports: 239225 / 22
 -------------------------------------------------------------------------
-Offset:              21.615ns (Levels of Logic = 19)
-  Source:            vga_unit/hc_1 (FF)
+Offset:              23.523ns (Levels of Logic = 21)
+  Source:            vga_unit/hc_4 (FF)
   Destination:       blu_o<1> (PAD)
   Source Clock:      clk rising
 
-  Data Path: vga_unit/hc_1 to blu_o<1>
+  Data Path: vga_unit/hc_4 to blu_o<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             9   0.591   0.995  vga_unit/hc_1 (vga_unit/hc_1)
-     LUT4_D:I0->LO         1   0.704   0.104  vga_unit/vidon_cmp_gt00001 (N205)
-     LUT4:I3->O            1   0.704   0.424  vga_unit/vidon_and00005 (vga_unit/vidon_and00005)
-     LUT4_D:I3->LO         1   0.704   0.104  vga_unit/vidon_and0000122_SW0 (N206)
-     LUT4:I3->O           49   0.704   1.443  vga_unit/vidon_and0000122 (vga_unit/vidon)
-     LUT2:I0->O            3   0.704   0.706  vga_unit/pix_v<6>1 (vga_unit/pix_v<6>)
-     LUT4:I0->O            1   0.704   0.455  vga_unit/hay_dot_cmp_gt00012_SW0 (N45)
-     LUT4:I2->O            2   0.704   0.622  vga_unit/hay_dot_cmp_gt00012 (vga_unit/hay_dot_cmp_gt0001)
-     LUT4:I0->O            1   0.704   0.424  vga_unit/grid_index<0>1_SW0 (N47)
-     LUT4:I3->O           13   0.704   1.158  vga_unit/grid_index<0>1 (N10)
-     LUT4:I0->O            1   0.704   0.455  vga_unit/Mcompar_hay_dot_cmp_eq0000_lut<0>_SW0 (N179)
-     LUT4:I2->O            1   0.704   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_lut<0> (vga_unit/Mcompar_hay_dot_cmp_eq0000_lut<0>)
+     FDRE:C->Q            24   0.591   1.287  vga_unit/hc_4 (vga_unit/hc_4)
+     LUT3_L:I2->LO         1   0.704   0.104  vga_unit/vsenable_cmp_eq000011 (vga_unit/N55)
+     LUT4:I3->O            1   0.704   0.424  vga_unit/vidon_and000088 (vga_unit/vidon_and000088)
+     LUT4_D:I3->LO         1   0.704   0.104  vga_unit/vidon_and000090 (N245)
+     LUT4:I3->O           58   0.704   1.445  vga_unit/vidon_and0000122 (vga_unit/vidon)
+     LUT2:I0->O            3   0.704   0.706  vga_unit/pixel_col<2>1 (vga_unit/pixel_col<2>)
+     LUT4:I0->O            1   0.704   0.000  vga_unit/hay_dot_cmp_gt0000217_SW01 (vga_unit/hay_dot_cmp_gt0000217_SW0)
+     MUXF5:I1->O           1   0.321   0.424  vga_unit/hay_dot_cmp_gt0000217_SW0_f5 (N221)
+     LUT4:I3->O            2   0.704   0.622  vga_unit/hay_dot_cmp_gt0000217 (vga_unit/hay_dot_cmp_gt0000)
+     LUT4:I0->O            1   0.704   0.499  vga_unit/hay_dot1_SW1 (N227)
+     LUT4:I1->O           24   0.704   1.331  vga_unit/hay_dot1 (vga_unit/N9)
+     LUT2:I1->O            1   0.704   0.499  vga_unit/grid_index<0>1 (vga_unit/grid_index<0>)
+     LUT4:I1->O            1   0.704   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_lut<0> (vga_unit/Mcompar_hay_dot_cmp_eq0000_lut<0>)
      MUXCY:S->O            1   0.464   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<0> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<0>)
      MUXCY:CI->O           1   0.059   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<1> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<1>)
      MUXCY:CI->O           1   0.059   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<2> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<2>)
      MUXCY:CI->O           1   0.059   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<3> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<3>)
      MUXCY:CI->O           1   0.059   0.000  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<4> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<4>)
-     MUXCY:CI->O           2   0.459   0.622  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<5> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<5>)
-     LUT4:I0->O            5   0.704   0.633  vga_unit/blu_o<1> (blu_o_0_OBUF)
+     MUXCY:CI->O           1   0.459   0.499  vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<5> (vga_unit/Mcompar_hay_dot_cmp_eq0000_cy<5>)
+     LUT3:I1->O            2   0.704   0.451  vga_unit/hay_dot21 (vga_unit/N49)
+     LUT4:I3->O            5   0.704   0.633  vga_unit/blu_o<1>1 (blu_o_0_OBUF)
      OBUF:I->O                 3.272          blu_o_1_OBUF (blu_o<1>)
     ----------------------------------------
-    Total                     21.615ns (13.470ns logic, 8.145ns route)
-                                       (62.3% logic, 37.7% route)
+    Total                     23.523ns (14.495ns logic, 9.028ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               7.577ns (Levels of Logic = 4)
+  Source:            mode (PAD)
+  Destination:       blu_o<1> (PAD)
+
+  Data Path: mode to blu_o<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  mode_IBUF (mode_IBUF)
+     LUT3:I0->O            2   0.704   0.451  vga_unit/hay_dot21 (vga_unit/N49)
+     LUT4:I3->O            5   0.704   0.633  vga_unit/blu_o<1>1 (blu_o_0_OBUF)
+     OBUF:I->O                 3.272          blu_o_1_OBUF (blu_o<1>)
+    ----------------------------------------
+    Total                      7.577ns (5.898ns logic, 1.679ns route)
+                                       (77.8% logic, 22.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.68 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.31 secs
  
 --> 
 
-Total memory usage is 259176 kilobytes
+Total memory usage is 263588 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

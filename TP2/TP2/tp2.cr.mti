@@ -1,4 +1,46 @@
-{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd}
+{C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/cont_bcd.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cont_bcd
+-- Compiling architecture Behavioral of cont_bcd
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity counter
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_vga.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_vga.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_vga
+-- Compiling architecture Beh of test_vga
+-- Loading package NUMERIC_STD
+-- Loading entity vga_ctrl
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_rom.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_rom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_rom
+-- Compiling architecture Beh of test_rom
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity Char_ROM
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl_sim.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl_sim.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity vga_ctrl
+-- Compiling architecture vga_ctrl_arq of vga_ctrl
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/contador.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -9,7 +51,7 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Compiling entity counter
 -- Compiling architecture Behavioral of counter
 
-} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd}
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -20,5 +62,38 @@ Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2
 -- Compiling entity test_counter_4dig
 -- Compiling architecture Beh of test_counter_4dig
 -- Loading entity cont_bcd
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd(22): (vcom-1484) Unknown formal identifier "out_7".
+
+** Error: C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/test_four.vhd(73): VHDL Compiler exiting
+
+} {12.0 13.0 14.0 15.0} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/char_rom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Char_ROM
+-- Compiling architecture p of Char_ROM
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/generador.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity generador
+-- Compiling architecture Beh of generador
+
+} {} {}} {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ram_array_vhd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ram_array_vhd.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_array
+-- Compiling architecture Beh of ram_array
 
 } {} {}}

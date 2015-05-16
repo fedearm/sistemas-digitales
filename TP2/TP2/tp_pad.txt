@@ -1,7 +1,7 @@
 Release 14.5 - par P.58f (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Thu May 14 23:29:08 2015
+Sat May 16 20:19:17 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -55,7 +55,7 @@ Pinout by Pin Number:
 |B15       |           |DIFFMI   |IP_L02P_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |B16       |           |DIFFM    |IO_L01P_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |B17       |           |         |GND                      |         |           |              |          |         |           |         |         |          |           |                |
-|B18       |rst_sd     |IBUF     |IP                       |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|B18       |           |IBUF     |IP                       |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |C1        |           |DIFFM    |IO_L01P_3                |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |C2        |           |DIFFS    |IO_L01N_3                |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |C3        |           |DIFFM    |IO_L25P_0                |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
@@ -284,7 +284,7 @@ Pinout by Pin Number:
 |R14       |           |DIFFS    |IO_L24N_2/A20            |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |R15       |           |DIFFM    |IO_L03P_1                |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |R16       |           |DIFFS    |IO_L03N_1/VREF_1         |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|R17       |           |IBUF     |IP                       |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|R17       |mode       |IBUF     |IP                       |INPUT    |LVCMOS25*  |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |R18       |           |DIFFM    |IO_L02P_1/A14            |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |T1        |           |DIFFS    |IO_L24N_3                |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |T2        |           |DIFFM    |IO_L24P_3                |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
