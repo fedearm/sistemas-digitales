@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">pixel_row</arg>&apos; of component &apos;<arg fmt="%s" index="4">vga_ctrl</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">pixel_row</arg>&apos; of component &apos;<arg fmt="%s" index="4">vga_ctrl</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">pixel_col</arg>&apos; of component &apos;<arg fmt="%s" index="4">vga_ctrl</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/topunit.vhd</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">pixel_col</arg>&apos; of component &apos;<arg fmt="%s" index="4">vga_ctrl</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/ctrl_disp.vhd</arg>&quot; line <arg fmt="%d" index="2">19</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">over</arg>&apos; of component &apos;<arg fmt="%s" index="4">counter</arg>&apos;.
@@ -20,7 +20,7 @@
 <msg type="info" file="Xst" num="1561" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/multiplexor.vhd</arg>&quot; line <arg fmt="%d" index="2">20</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd</arg>&quot; line <arg fmt="%d" index="2">178</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/FedeA/Facu/Sistemas Digitales/workspace/sistemas-digitales/TP2/TP2/vga_ctrl.vhd</arg>&quot; line <arg fmt="%d" index="2">178</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;mode&gt;</arg>
 </msg>
 
